@@ -8,7 +8,7 @@ import logoIcon from 'assets/logo.png'
 
 function Navbar() {
   const pages = pagesData.map(page => (
-    <a key={page.key} href={page.href}className='page'>
+    <a key={page.id} href={page.href}className='page'>
       {page.title}
     </a>
   ))
