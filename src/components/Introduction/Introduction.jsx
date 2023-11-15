@@ -1,5 +1,8 @@
 import './Introduction.scss'
 
+// import dependencies
+import clsx from 'clsx'
+
 // import data
 import charactersData from 'data/charactersData'
 
@@ -10,10 +13,10 @@ function Introduction() {
   const characters = charactersData.map(character => (
     <div key={character.id} className='characterBox'>
       <img src={character.line} alt={character.name + 'LineBg'} className='lineBg' />
-      <div className='headBox'>
+      <div className={'headBox ' + clsx({left: character.id % 2 !== 0, right: character.id % 2 === 0})}>
         <img src={character.avatar} alt={character.name + 'Avatar'} className='head'/>
       </div>
-      <div className="introductionBox">
+      <div className={'introductionBox ' + clsx({right: character.id % 2 !== 0, left: character.id % 2 === 0})}>
         <div className="name">{character.name}</div>
         <div className="slogan">{character.slogan}</div>
         <div className="contentBox">

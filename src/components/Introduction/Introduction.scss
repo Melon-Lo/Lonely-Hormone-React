@@ -2,7 +2,8 @@
   background: #292929;
 
   .title {
-    margin: 100px 0;
+    margin: 85px 0 0 0;
+    padding: 20px 0;
     color: white;
     font-size: 2rem;
     font-weight: 800;
@@ -15,6 +16,8 @@
       height: 250px;
       margin: 50px 0;
 
+      // lineBg
+
       .lineBg {
         position: absolute;
         top: 10%;
@@ -23,22 +26,25 @@
         height: 80%;
       }
 
+      // headBox
+      
       .headBox {
         position: absolute;
         top: 0;
-        left: 0;
         height: 100%;
-
-        .head {
-          width: 100%;
-          height: 100%;
-        }
+        z-index: 3;
       }
+
+      .head {
+        width: 100%;
+        height: 100%;
+      }
+
+      // introductionBox
 
       .introductionBox {
         position: absolute;
         top: 15%;
-        right: 0;
         width: 75%;
         height: 75%;
         display: flex;
@@ -78,6 +84,16 @@
             z-index: 1;
           }
         }
+      }
+
+      // left & right
+
+      .left {
+        left: 0;
+      }
+
+      .right {
+        right: 0;
       }
     }
   }
