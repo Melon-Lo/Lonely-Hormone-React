@@ -12,7 +12,7 @@ const pagesData = [
   {
     id: '3',
     title: '作品集',
-    href: '/porfolio',
+    href: '/portfolio',
   },
   {
     id: '4',

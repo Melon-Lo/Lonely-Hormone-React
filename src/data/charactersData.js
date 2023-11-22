@@ -2,7 +2,8 @@ const charactersData = [
   {
     id: '1',
     name: '爾蒙',
-    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/chuan.png?raw=true',
+    eng: 'xiang',
+    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/xiang.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/xiang_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/blue_line.png?raw=true',
     slogan: '「人生就是無止盡的即興演出。」',
@@ -11,6 +12,7 @@ const charactersData = [
   {
     id: '2',
     name: '厚厚',
+    eng: 'holly',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/holly.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/holly_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/red_line.png?raw=true',
@@ -20,6 +22,7 @@ const charactersData = [
   {
     id: '3',
     name: '勃全',
+    eng: 'chuan',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/chuan.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/chuan_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/green_line.png?raw=true',
@@ -29,6 +32,7 @@ const charactersData = [
   {
     id: '4',
     name: '小婕',
+    eng: 'jelly',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/jelly.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/jelly_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/yellow_line.png?raw=true',
@@ -38,6 +42,7 @@ const charactersData = [
   {
     id: '5',
     name: '蓁蓁',
+    eng: 'iris',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/iris.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/iris_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/white_line.png?raw=true',
