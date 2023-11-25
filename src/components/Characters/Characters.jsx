@@ -1,13 +1,12 @@
 import './Characters.scss'
 
-// import dependencies
-import { useState } from 'react'
-
 // import data
 import charactersData from 'data/charactersData'
 
 // import images
 import background from 'assets/bg without people.png'
+
+// when the avatar is clicked, scroll to the clicked character
 
 function scrollToAnchor(anchorName) {
   if(anchorName) {
@@ -20,6 +19,34 @@ function scrollToAnchor(anchorName) {
     }
   }
 }
+
+// when the avatar is/isn't hovered, zoom in/out the character
+
+function zoomIn(characterName) {
+  let name = document.getElementById(characterName).id
+  let imgBox = document.getElementById(name + 'Img')
+  if(imgBox) {
+    imgBox.style = `
+      opacity: 1;
+      transform: scale(1.1, 1.1);
+      transform-origin: bottom center;
+      cursor: pointer;
+    `
+  }
+}
+
+function zoomOut(characterName) {
+  let name = document.getElementById(characterName).id
+  let imgBox = document.getElementById(name + 'Img')
+  if(imgBox) {
+    imgBox.style = `
+      opacity: 0.8;
+      transform: scale(1, 1);
+    `
+  }
+}
+
+// when the avatar is/isn't hovered, show/hide the character's name
 
 function showName(characterName) {
   let name = document.getElementById(characterName).id
@@ -38,23 +65,34 @@ function hideName(characterName) {
 }
 
 function Characters() {
-  const characters = charactersData.map(character => (
+  // this order is only for "Characters" component
+  const newOrder = [charactersData[2], charactersData[1], charactersData[0], charactersData[3], charactersData[4]]
+
+  const characters = newOrder.map(character => (
     <div 
       key={character.id}
       id={character.eng + 'Avatar'}
       className="characterBox"
       onClick={() => scrollToAnchor(character.eng)}
+      onMouseEnter={() => {
+        showName(character.eng)
+        zoomIn(character.eng)
+      }}
+      onMouseLeave={() => {
+        hideName(character.eng)
+        zoomOut(character.eng)
+      }}
     >
       <img 
+        id={character.eng + 'Img'}
         className="characterImg" 
         src={character.img} 
         alt={character.name + 'Img'} 
-        onMouseEnter={() => showName(character.eng)}
-        onMouseLeave={() => hideName(character.eng)}
       />
       <div 
         id={character.eng + 'Name'}
-        className="nameBox">
+        className="nameBox"
+      >
         {character.name}
       </div>
     </div>
