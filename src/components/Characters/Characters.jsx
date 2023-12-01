@@ -1,5 +1,8 @@
 import './Characters.scss'
 
+// import dependencies
+import {nanoid} from 'nanoid'
+
 // import data
 import charactersData from 'data/charactersData'
 
@@ -70,7 +73,7 @@ function Characters() {
 
   const characters = newOrder.map(character => (
     <div 
-      key={character.id}
+      key={nanoid()}
       id={character.eng + 'Avatar'}
       className="characterBox"
       onClick={() => scrollToAnchor(character.eng)}

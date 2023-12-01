@@ -1,5 +1,8 @@
 import './Timeline.scss'
 
+// import dependencies
+import {nanoid} from 'nanoid'
+
 // import data
 import timelineData from 'data/timelineData'
 
@@ -8,7 +11,7 @@ import bg from 'assets/text_background.png'
 
 function Timeline() {
   const timeline = timelineData.map(timelineEvent => (
-    <div key={timelineEvent.id} className="timelineBox">
+    <div key={nanoid()} className="timelineBox">
       <div className="leftInfo">
         <div className="circle"></div>
         <div className="dateBox">

@@ -1,5 +1,8 @@
 import './Navbar.scss'
 
+// import dependencies
+import {nanoid} from 'nanoid'
+
 // import data
 import pagesData from 'data/pagesData'
 
@@ -8,7 +11,7 @@ import logoIcon from 'assets/logo.png'
 
 function Navbar() {
   const pages = pagesData.map(page => (
-    <a key={page.id} href={page.href}className='page'>
+    <a key={nanoid()} href={page.href}className='page'>
       {page.title}
     </a>
   ))

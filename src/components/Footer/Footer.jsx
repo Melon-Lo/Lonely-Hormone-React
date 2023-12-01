@@ -1,5 +1,8 @@
 import './Footer.scss'
 
+// import dependencies
+import {nanoid} from 'nanoid'
+
 // import img
 import logo from 'assets/logo_TC+EN.png'
 
@@ -11,14 +14,14 @@ function Footer() {
   const linkSection = (
     <div className="linkSection">
       {linksData.map(linkItem => (
-        <>
-          <div key={linkItem.id} className="linkTitle">{linkItem.title}</div>
+        <div key={nanoid()}>
+          <div className="linkTitle">{linkItem.title}</div>
           <div className="links">
             {linkItem.links.map(link => (
-              <a key={link.id} href={link.href} className="link">{link.title}</a>
+              <a key={nanoid()} href={link.href} className="link">{link.title}</a>
             ))}
           </div>
-        </>
+        </div>
       ))}
     </div>
   )
@@ -28,7 +31,7 @@ function Footer() {
       <div className="contactTitle">{contactData.title}</div>
       <div className="tel">{'電話：' + contactData.tel}</div>
       {contactData.socialMedia.map(socialMedia => (
-        <a href={socialMedia.href} className="socialMedia">{socialMedia.title}</a>
+        <a key={nanoid()} href={socialMedia.href} className="socialMedia">{socialMedia.title}</a>
       ))}
     </div>
   )

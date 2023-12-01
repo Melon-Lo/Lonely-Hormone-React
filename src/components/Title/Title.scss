@@ -1,0 +1,29 @@
+.titleContainer {
+  position: relative;
+  margin-top: 150px;
+
+  .titleContent {
+    padding: 0 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 50vw;
+      height: 10px;
+      top: 50%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: 100%;
+    }
+  }
+}
