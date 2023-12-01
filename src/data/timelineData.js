@@ -25,7 +25,7 @@ const timelineData = [
   },
   {
     id: '4',
-    year: '2023',
+    year: '2024',
     date: 'Apr. 11th',
     img: 'https://picsum.photos/536/358',
     title: '基因編輯治療正式上市',
@@ -33,7 +33,7 @@ const timelineData = [
   },
   {
     id: '5',
-    year: '2023',
+    year: '2024',
     date: 'Sep. 28th',
     img: 'https://picsum.photos/536/359',
     title: '世界各地普遍實行四天工作制',

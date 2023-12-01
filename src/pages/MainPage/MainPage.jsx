@@ -4,6 +4,7 @@ import './MainPage.scss'
 import Navbar from 'components/Navbar/Navbar'
 import Characters from 'components/Characters/Characters'
 import Introduction from 'components/Introduction/Introduction'
+import Footer from 'components/Footer/Footer'
 
 function MainPage() {
   return (
@@ -11,6 +12,7 @@ function MainPage() {
       <Navbar />
       <Characters />
       <Introduction />
+      <Footer />
     </>
   )
 }
