@@ -1,20 +1,19 @@
-import './AboutBox.scss'
+import './InfoBox.scss'
 
 // import img
 import groupImg from 'assets/group.jpeg'
 
-// import data
-import textData from 'data/textData'
 
-function AboutBox() {
+
+function InfoBox({content}) {
   return (
-    <div className="aboutBoxContainer">
+    <div className="infoBoxContainer">
       <img className="groupImg" src={groupImg} alt="groupImg" />
       <div className="text">
-        {textData.introduction}
+        {content}
       </div>
     </div>
   )
 }
 
-export default AboutBox
+export default InfoBox
