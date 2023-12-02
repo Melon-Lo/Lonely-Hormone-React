@@ -1,14 +1,12 @@
 import './InfoBox.scss'
 
-// import img
-import groupImg from 'assets/group.jpeg'
-
-
-
-function InfoBox({content}) {
+function InfoBox({content, img}) {
   return (
     <div className="infoBoxContainer">
-      <img className="groupImg" src={groupImg} alt="groupImg" />
+      <img 
+        className="img" 
+        src={img} 
+        alt="img" />
       <div className="text">
         {content}
       </div>
