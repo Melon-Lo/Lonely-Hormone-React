@@ -6,16 +6,20 @@
   justify-content: space-between;
   width: 100vw;
   height: 60px;
-  background-color: rgb(211, 211, 211);
+
+  // background
+  background-image: url('../../assets/marble\ bg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   // shadow
-  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 0 5px 5px rgba(0, 0, 0, 0.5);
 
   .logoBox {
     height: 100%;
     margin: 0.6rem;
+    cursor: pointer;
 
     .logoIcon {
       height: 100%;

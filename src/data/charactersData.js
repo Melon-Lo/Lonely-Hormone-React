@@ -2,7 +2,7 @@ const charactersData = [
   {
     name: '爾蒙',
     eng: 'xiang',
-    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/xiang.png?raw=true',
+    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/xiang.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/xiang_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/blue_line.png?raw=true',
     slogan: '「人生就是無止盡的即興演出。」',
@@ -11,7 +11,7 @@ const charactersData = [
   {
     name: '厚厚',
     eng: 'holly',
-    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/holly.png?raw=true',
+    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/holly.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/holly_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/red_line.png?raw=true',
     slogan: '「發揮潛能，征服命運。」',
@@ -20,7 +20,7 @@ const charactersData = [
   {
     name: '勃全',
     eng: 'chuan',
-    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/chuan.png?raw=true',
+    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/chuan.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/chuan_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/green_line.png?raw=true',
     slogan: '「創新、啟發、影響。」',
@@ -29,7 +29,7 @@ const charactersData = [
   {
     name: '小婕',
     eng: 'jelly',
-    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/jelly.png?raw=true',
+    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/jelly.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/jelly_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/yellow_line.png?raw=true',
     slogan: '「敢於夢想，努力實現。」',
@@ -38,7 +38,7 @@ const charactersData = [
   {
     name: '蓁蓁',
     eng: 'iris',
-    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/iris.png?raw=true',
+    img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/iris.png?raw=true',
     avatar: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/head/iris_head.png?raw=true',
     line: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/line/white_line.png?raw=true',
     slogan: '「提升卓越，擁抱變革。」',

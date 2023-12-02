@@ -12,8 +12,13 @@
     height: 200px;
     margin: 20px 0;
     padding: 20px;
-    background-color: #e8e8e8;
     border-radius: 10px;
+
+    // background
+    background-image: url('../../assets/white\ bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .videoBox {
       width: 35%;
@@ -28,7 +33,7 @@
     .text {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       width: 55%;
 
       .title {

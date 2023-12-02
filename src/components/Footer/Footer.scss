@@ -3,6 +3,12 @@
   margin-top: 50px;
   display: flex; 
   background-color: #b0b0b0;
+
+  // background
+  background-image: url('../../assets/gray\ bg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   
   .leftFooter {
     width: 40%;
