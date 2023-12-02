@@ -9,13 +9,13 @@ import Footer from 'components/Footer/Footer'
 
 function MainPage() {
   return (
-    <>
+    <div className="mainPageContainer">
       <Navbar />
       <Characters />
       <Title content={'人物介紹'}/>
       <Introduction />
       <Footer />
-    </>
+    </div>
   )
 }
 
