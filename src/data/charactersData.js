@@ -1,5 +1,6 @@
 const charactersData = [
   {
+    order: 1,
     name: '爾蒙',
     eng: 'xiang',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/xiang.png?raw=true',
@@ -9,6 +10,7 @@ const charactersData = [
     introduction: '人見人愛的男孩，技能是使用舌頭噴口水。最近被困在海拉魯大地，久久無法脫逃。願望是平安喜樂，永遠安康自在（或是成為有錢人家的狗）。',
   },
   {
+    order: 2,
     name: '厚厚',
     eng: 'holly',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/holly.png?raw=true',
@@ -18,6 +20,7 @@ const charactersData = [
     introduction: '你好，我是一個充滿好奇心和幽默感的冒險家！我的生活充滿著探索未知領域的熱情，無論是在山川湖海中或是在書本的世界中。',
   },
   {
+    order: 3,
     name: '勃全',
     eng: 'chuan',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/chuan.png?raw=true',
@@ -27,6 +30,7 @@ const charactersData = [
     introduction: '我總是喜歡嘗試新事物，無論是美食、音樂還是旅行。我認為生活太短暫，應該充滿歡笑和驚喜。',
   },
   {
+    order: 4,
     name: '小婕',
     eng: 'jelly',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/jelly.png?raw=true',
@@ -36,6 +40,7 @@ const charactersData = [
     introduction: '此外，我是一個堅定的夢想家，相信任何事情都有可能實現，只要我們保持積極態度和毅力。',
   },
   {
+    order: 5,
     name: '蓁蓁',
     eng: 'iris',
     img: 'https://github.com/Melon-Lo/Lonely-Hormone-React/blob/main/src/assets/avatar/iris.png?raw=true',

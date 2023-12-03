@@ -16,10 +16,10 @@ function Introduction() {
       {charactersData.map(character => (
         <div id={character.eng} key={nanoid()} className='characterBox'>
           <img src={character.line} alt={character.name + 'LineBg'} className='lineBg' />
-          <div className={'headBox ' + clsx({'left fadeInLeft': character.id % 2 !== 0, 'right fadeInRight': character.id % 2 === 0})}>
+          <div className={'headBox ' + clsx({'left fadeInLeft': character.order % 2 !== 0, 'right fadeInRight': character.order % 2 === 0})}>
             <img src={character.avatar} alt={character.name + 'Avatar'} className='head'/>
           </div>
-          <div className={'introductionBox ' + clsx({right: character.id % 2 !== 0, left: character.id % 2 === 0})}>
+          <div className={'introductionBox ' + clsx({right: character.order % 2 !== 0, left: character.order % 2 === 0})}>
             <div className="name">{character.name}</div>
             <div className="slogan typing">{character.slogan}</div>
             <div className="contentBox">
