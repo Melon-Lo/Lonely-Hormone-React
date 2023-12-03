@@ -9,6 +9,7 @@ import pagesData from 'data/pagesData'
 
 // import icon
 import logoIcon from 'assets/logo.png'
+import { ReactComponent as BurgerIcon} from 'assets/icon/burger.svg'
 
 // import hook
 import { useContext, useState } from 'react'
@@ -23,12 +24,10 @@ function Navbar() {
   const navigate = useNavigate()
 
   const pages = pagesData.map(page => (
-    <a key={nanoid()} href={page.href}className='page'>
+    <a key={nanoid()} href={page.href} className='page'>
       {page.title}
     </a>
   ))
-
-  console.log(windowWidth)
 
   return (
     <div className="navBarContainer">
@@ -43,9 +42,32 @@ function Navbar() {
           src={logoIcon} alt="logo_icon" 
         />
       </div>
-      <div className="pagesBox">
-        {pages}
-      </div>
+
+      { windowWidth > 768 ? 
+        // pages: when window width is larger than 768px
+        <div className="pagesBox">
+          {pages}
+        </div> :
+
+        // burger: when window width is smaller than 768px
+        <div 
+          className="burgerBox"
+          onClick={() => {
+            setIsToggled(!isToggled)
+          }}
+        >
+          <BurgerIcon 
+            className="burger"
+          />
+        </div>
+      }
+
+      {/* when the burger is toggled, show sidebar */}
+      { isToggled && 
+        <div className="sideBarBox">
+          {pages}
+        </div>
+       } 
     </div>
   )
 }

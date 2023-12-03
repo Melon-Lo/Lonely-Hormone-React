@@ -58,4 +58,45 @@
       transition: 0.2s ease-out;
     }
   }
+
+  // when window width is smaller than 768px
+
+  .burgerBox {
+    height: 100%;
+    z-index: 5;
+    cursor: pointer;
+
+    .burger {
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  // when the burger is toggled
+
+  .sideBarBox {
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 80px;
+
+    .page {
+      margin: 40px 30px 0 0;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    // background
+    background-image: url('../../assets/marble\ bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    // shadow
+    box-shadow: 0px -3px 5px 5px rgba(0, 0, 0, 0.5);
+}
 }
