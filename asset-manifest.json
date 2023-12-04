@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Lonely-Hormone-React/static/css/main.9649a3fa.css",
-    "main.js": "/Lonely-Hormone-React/static/js/main.f90370e5.js",
+    "main.css": "/Lonely-Hormone-React/static/css/main.240da660.css",
+    "main.js": "/Lonely-Hormone-React/static/js/main.bca522b3.js",
     "static/media/cover.png": "/Lonely-Hormone-React/static/media/cover.6da910a6df34a37525bb.png",
     "static/media/bg without people.png": "/Lonely-Hormone-React/static/media/bg without people.b7f9b9b11ab62cd39afe.png",
     "static/media/gray bg.jpeg": "/Lonely-Hormone-React/static/media/gray bg.6c080dbca64d3a1ab36d.jpeg",
@@ -17,12 +17,13 @@
     "static/media/facebook.svg": "/Lonely-Hormone-React/static/media/facebook.bbe12530e13760a2867b1fb4c7c72c53.svg",
     "static/media/youtube.svg": "/Lonely-Hormone-React/static/media/youtube.dd044bf8744fd318a9456b1fafa2e20b.svg",
     "index.html": "/Lonely-Hormone-React/index.html",
+    "static/media/cross.svg": "/Lonely-Hormone-React/static/media/cross.a6b9ffc5deeeb58064e76e9c4fe167d5.svg",
     "static/media/burger.svg": "/Lonely-Hormone-React/static/media/burger.fc12fbd678bea2ce4ec9524cbe12a170.svg",
-    "main.9649a3fa.css.map": "/Lonely-Hormone-React/static/css/main.9649a3fa.css.map",
-    "main.f90370e5.js.map": "/Lonely-Hormone-React/static/js/main.f90370e5.js.map"
+    "main.240da660.css.map": "/Lonely-Hormone-React/static/css/main.240da660.css.map",
+    "main.bca522b3.js.map": "/Lonely-Hormone-React/static/js/main.bca522b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9649a3fa.css",
-    "static/js/main.f90370e5.js"
+    "static/css/main.240da660.css",
+    "static/js/main.bca522b3.js"
   ]
 }
