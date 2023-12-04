@@ -36,3 +36,44 @@
     padding: 0.8rem 2rem;
   }
 }
+
+// when the screen is smaller than 768px
+
+.smallInfoBoxContainer {
+  position: relative;
+  width: 80vw;
+  height: 450px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 1px solid white;
+    z-index: 3;
+    opacity: 1;
+  }
+
+  .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 0;
+    opacity: 0.2;
+  }
+
+  .text {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    padding: 0.8rem 2rem;
+  }
+}
