@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 // import pages
 import MainPage from './pages/MainPage/MainPage';
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
           <Route path="/portfolio" element={<PortfolioPage />}></Route>
-          <Route path="*" element={<MainPage />}></Route>
+          <Route path="*" element={<Navigate to="/main" />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
