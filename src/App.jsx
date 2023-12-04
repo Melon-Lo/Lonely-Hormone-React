@@ -15,11 +15,11 @@ function App() {
     <div className="App">
       <BrowserRouter basename={basename}>
         <Routes>
-          <Route path="/main" element={<MainPage />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
-          <Route path="/contact" element={<ContactPage />}></Route>
-          <Route path="/portfolio" element={<PortfolioPage />}></Route>
-          <Route path="*" element={<Navigate to="/main" />}></Route>
+          <Route path="main" element={<MainPage />}></Route>
+          <Route path="about" element={<AboutPage />}></Route>
+          <Route path="contact" element={<ContactPage />}></Route>
+          <Route path="portfolio" element={<PortfolioPage />}></Route>
+          <Route path="*" element={<Navigate to="main" />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
