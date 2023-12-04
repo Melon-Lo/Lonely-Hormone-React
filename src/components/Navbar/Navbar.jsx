@@ -26,7 +26,7 @@ export default function Navbar() {
   const navigate = useNavigate()
 
   const pages = pagesData.map(page => (
-    <a key={nanoid()} href={basename + page.href} className='page'>
+    <a key={nanoid()} href={page.href} className='page'>
       {page.title}
     </a>
   ))
