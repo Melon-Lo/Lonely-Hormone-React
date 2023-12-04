@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Lonely-Hormone-React/static/css/main.feb89874.css",
-    "main.js": "/Lonely-Hormone-React/static/js/main.734fc8d9.js",
-    "static/media/cover.png": "/Lonely-Hormone-React/static/media/cover.6da910a6df34a37525bb.png",
-    "static/media/bg without people.png": "/Lonely-Hormone-React/static/media/bg without people.b7f9b9b11ab62cd39afe.png",
-    "static/media/gray bg.jpeg": "/Lonely-Hormone-React/static/media/gray bg.6c080dbca64d3a1ab36d.jpeg",
-    "static/media/text_background.png": "/Lonely-Hormone-React/static/media/text_background.7583883aa5b4a60711e3.png",
-    "static/media/logo_TC+EN.png": "/Lonely-Hormone-React/static/media/logo_TC+EN.4fa761b3c01a94a541a6.png",
-    "static/media/logo.png": "/Lonely-Hormone-React/static/media/logo.8ccd74d6f5ec3fe5022a.png",
-    "static/media/group.jpeg": "/Lonely-Hormone-React/static/media/group.98729590f18e0fadbdfb.jpeg",
-    "static/media/white bg.jpeg": "/Lonely-Hormone-React/static/media/white bg.c2d0debf55942398f5a6.jpeg",
-    "static/media/marble bg.jpeg": "/Lonely-Hormone-React/static/media/marble bg.eb76463c4b0397f4c67a.jpeg",
-    "static/media/dark gray bg.jpeg": "/Lonely-Hormone-React/static/media/dark gray bg.6fc50df1c4de0d5f9920.jpeg",
-    "static/media/instagram.svg": "/Lonely-Hormone-React/static/media/instagram.b2043c0295ef318920bcd05b43bf4921.svg",
-    "static/media/email.svg": "/Lonely-Hormone-React/static/media/email.68f25a7ccd73f7a88de37b80795fbe3c.svg",
-    "static/media/facebook.svg": "/Lonely-Hormone-React/static/media/facebook.bbe12530e13760a2867b1fb4c7c72c53.svg",
-    "static/media/youtube.svg": "/Lonely-Hormone-React/static/media/youtube.dd044bf8744fd318a9456b1fafa2e20b.svg",
-    "index.html": "/Lonely-Hormone-React/index.html",
-    "static/media/burger.svg": "/Lonely-Hormone-React/static/media/burger.fc12fbd678bea2ce4ec9524cbe12a170.svg",
-    "main.feb89874.css.map": "/Lonely-Hormone-React/static/css/main.feb89874.css.map",
-    "main.734fc8d9.js.map": "/Lonely-Hormone-React/static/js/main.734fc8d9.js.map"
+    "main.css": "/Lonely-Hormone-React/main/static/css/main.d028ceae.css",
+    "main.js": "/Lonely-Hormone-React/main/static/js/main.4d86b1c6.js",
+    "static/media/cover.png": "/Lonely-Hormone-React/main/static/media/cover.6da910a6df34a37525bb.png",
+    "static/media/bg without people.png": "/Lonely-Hormone-React/main/static/media/bg without people.b7f9b9b11ab62cd39afe.png",
+    "static/media/gray bg.jpeg": "/Lonely-Hormone-React/main/static/media/gray bg.6c080dbca64d3a1ab36d.jpeg",
+    "static/media/text_background.png": "/Lonely-Hormone-React/main/static/media/text_background.7583883aa5b4a60711e3.png",
+    "static/media/logo_TC+EN.png": "/Lonely-Hormone-React/main/static/media/logo_TC+EN.4fa761b3c01a94a541a6.png",
+    "static/media/logo.png": "/Lonely-Hormone-React/main/static/media/logo.8ccd74d6f5ec3fe5022a.png",
+    "static/media/group.jpeg": "/Lonely-Hormone-React/main/static/media/group.98729590f18e0fadbdfb.jpeg",
+    "static/media/white bg.jpeg": "/Lonely-Hormone-React/main/static/media/white bg.c2d0debf55942398f5a6.jpeg",
+    "static/media/marble bg.jpeg": "/Lonely-Hormone-React/main/static/media/marble bg.eb76463c4b0397f4c67a.jpeg",
+    "static/media/dark gray bg.jpeg": "/Lonely-Hormone-React/main/static/media/dark gray bg.6fc50df1c4de0d5f9920.jpeg",
+    "static/media/instagram.svg": "/Lonely-Hormone-React/main/static/media/instagram.b2043c0295ef318920bcd05b43bf4921.svg",
+    "static/media/email.svg": "/Lonely-Hormone-React/main/static/media/email.68f25a7ccd73f7a88de37b80795fbe3c.svg",
+    "static/media/facebook.svg": "/Lonely-Hormone-React/main/static/media/facebook.bbe12530e13760a2867b1fb4c7c72c53.svg",
+    "static/media/youtube.svg": "/Lonely-Hormone-React/main/static/media/youtube.dd044bf8744fd318a9456b1fafa2e20b.svg",
+    "index.html": "/Lonely-Hormone-React/main/index.html",
+    "static/media/burger.svg": "/Lonely-Hormone-React/main/static/media/burger.fc12fbd678bea2ce4ec9524cbe12a170.svg",
+    "main.d028ceae.css.map": "/Lonely-Hormone-React/main/static/css/main.d028ceae.css.map",
+    "main.4d86b1c6.js.map": "/Lonely-Hormone-React/main/static/js/main.4d86b1c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.feb89874.css",
-    "static/js/main.734fc8d9.js"
+    "static/css/main.d028ceae.css",
+    "static/js/main.4d86b1c6.js"
   ]
 }
