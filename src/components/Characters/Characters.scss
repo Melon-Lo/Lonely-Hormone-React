@@ -99,33 +99,18 @@
       .characterImg {
         position: absolute;
         object-fit: contain;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         background-color: rgba($color: #ffffff, $alpha: 0.7);
+        cursor: pointer;
       }
 
       .nameBox {
         display: none;
-        // position: absolute;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // bottom: 15%;
-        // left: 50%;
-        // padding: 10px;
-        // background-color: black;
-        // font-size: 2rem;
-        // color: white;
-        // white-space: nowrap;
-        // transform: translate(-50%, -50%);
-        // z-index: 3;
-        // transition: 0.3s;
-        // opacity: 0;
-        // cursor: pointer;
       }
     }
   }

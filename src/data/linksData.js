@@ -30,10 +30,6 @@ const linksData = [
         title: 'Cookie',
         href: '',
       },
-      {
-        title: 'GDPR',
-        href: '',
-      },
     ]
   }
 ]

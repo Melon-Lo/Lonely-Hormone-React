@@ -10,14 +10,15 @@ import pagesData from 'data/pagesData'
 // import icon
 import logoIcon from 'assets/logo.png'
 import { ReactComponent as BurgerIcon} from 'assets/icon/burger.svg'
+import { ReactComponent as CrossIcon} from 'assets/icon/cross.svg'
 
 // import hook
-import { useContext, useState } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
 
 
 export default function Navbar() {
-  const [isToggled, setIsToggled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const { windowWidth } = useContext(WindowWidthContext)
 
   const navigate = useNavigate()
@@ -27,6 +28,12 @@ export default function Navbar() {
       {page.title}
     </Link>
   ))
+
+  useEffect(() => {
+    if(windowWidth > 768) {
+      setIsOpen(false)
+    }
+  })
 
   return (
     <div className="navBarContainer">
@@ -48,25 +55,23 @@ export default function Navbar() {
           {pages}
         </div> :
 
-        // burger: when window width is smaller than 768px
+        // burger/cross: when window width is smaller than 768px
         <div 
-          className="burgerBox"
+          className="iconBox"
           onClick={() => {
-            setIsToggled(!isToggled)
+            setIsOpen(!isOpen)
           }}
         >
-          <BurgerIcon 
-            className="burger"
-          />
+          { isOpen ? 
+            <CrossIcon className="icon"/> : <BurgerIcon className="icon" />
+          }
         </div>
       }
 
       {/* when the burger is toggled, show sidebar */}
-      { isToggled && 
-        <div className="sideBarBox">
-          {pages}
-        </div>
-       } 
+      <div className={isOpen ? "sideBarBox" : "sideBarBox hidden"}>
+        {pages}
+      </div>
     </div>
   )
 }
