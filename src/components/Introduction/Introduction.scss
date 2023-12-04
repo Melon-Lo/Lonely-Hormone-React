@@ -1,5 +1,5 @@
 .introductionContainer {
-  width: 100vw;
+  width: 100%;
 
   .characters {
 
@@ -14,7 +14,7 @@
         position: absolute;
         top: 10%;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: 80%;
         z-index: 0;
       }
@@ -26,11 +26,11 @@
         top: 0;
         height: 100%;
         z-index: 1;
-      }
 
-      .head {
-        width: 100%;
-        height: 100%;
+        .head {
+          width: 100%;
+          height: 100%;
+        }
       }
 
       // introductionBox
@@ -112,7 +112,7 @@
         position: absolute;
         top: 10%;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: 80%;
         z-index: 0;
       }
@@ -121,17 +121,17 @@
 
       .headBoxRight, .headBoxLeft {
         position: absolute;
-        top: 0;
-        height: 100%;
+        bottom: 0;
+        height: 90%;
         z-index: 1;
       }
 
       .headBoxRight {
-        right: -10%;
+        right: 0;
       }
 
       .headBoxLeft {
-        left: -10%;
+        left: 0;
       }
 
       .head {
@@ -145,7 +145,7 @@
         position: relative;
         top: 15%;
 
-        width: 100vw;
+        width: 100%;
         height: 80%;
         z-index: 1;
 
