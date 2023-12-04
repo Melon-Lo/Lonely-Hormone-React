@@ -17,6 +17,8 @@ import { WindowWidthContext } from 'context/WindowWidthContext'
 
 
 export default function Navbar() {
+  const basename = process.env.PUBLIC_URL
+
   const [type, setType] = useState('navbar')
   const [isToggled, setIsToggled] = useState(false)
   const { windowWidth } = useContext(WindowWidthContext)
@@ -24,7 +26,7 @@ export default function Navbar() {
   const navigate = useNavigate()
 
   const pages = pagesData.map(page => (
-    <a key={nanoid()} href={page.href} className='page'>
+    <a key={nanoid()} href={basename + page.href} className='page'>
       {page.title}
     </a>
   ))
