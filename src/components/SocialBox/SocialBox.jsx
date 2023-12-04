@@ -9,9 +9,15 @@ import { ReactComponent as EmailIcon } from 'assets/icon/email.svg'
 // import data
 import contactData from 'data/contactData'
 
+// import hook
+import { useContext } from 'react'
+import { WindowWidthContext } from 'context/WindowWidthContext'
+
 export default function SocialBox() {
+  const windowWidth = useContext(WindowWidthContext)
+
   return (
-    <div className="socialBoxContainer">
+    <div className={windowWidth > 768 ? "socialBoxContainer" : "smallSocialBoxContainer"}>
       <div className="iconBox">
         <FacebookIcon 
           className="icon" 
