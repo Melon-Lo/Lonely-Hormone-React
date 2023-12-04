@@ -12,7 +12,7 @@ const basename = process.env.PUBLIC_URL
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter basename={basename}>
         <Routes>
           <Route path="main" element={<MainPage />}></Route>

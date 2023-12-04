@@ -3,18 +3,6 @@ const linksData = [
     title: '客服服務',
     links: [
       {
-        title: '運送說明',
-        href: '',
-      },
-      {
-        title: '退換貨相關',
-        href: '',
-      },
-      {
-        title: '付款資訊',
-        href: '',
-      },
-      {
         title: 'FAQ',
         href: '',
       },
@@ -24,10 +12,6 @@ const linksData = [
     links: [
       {
         title: '品牌故事',
-        href: '',
-      },
-      {
-        title: '媒體連繫',
         href: '',
       },
       {
