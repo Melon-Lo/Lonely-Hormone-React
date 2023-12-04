@@ -99,6 +99,8 @@
       }
     }
 
+    // screen < 768px
+
     .smallCharacterBox {
       position: relative;
       height: 400px;
@@ -213,11 +215,13 @@
           }
 
           .contentRight {
-            right: 10%;
+            right: 5%;
+            text-align: right;
           }
 
           .contentLeft {
             left: 5%;
+            text-align: left;
           }
         }
       }
