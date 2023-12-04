@@ -58,3 +58,73 @@
     }
   }
 }
+
+// when the screen is smaller than 768px
+
+.smallCharactersContainer {
+  position: relative;
+  margin: 20px 0;
+  width: 100vw;
+  height: 200px;
+
+  .background {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .characters {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    &::before {
+      content: '點我，可以更認識我。';
+      position: absolute;
+      bottom: -50px;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .characterBox {
+      position: relative;
+      width: 20%;
+      height: 100%;
+      display: flex;
+
+      .characterImg {
+        position: absolute;
+        object-fit: contain;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+      }
+
+      .nameBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 15%;
+        left: 50%;
+        padding: 10px;
+        background-color: black;
+        font-size: 2rem;
+        color: white;
+        white-space: nowrap;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        transition: 0.3s;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}

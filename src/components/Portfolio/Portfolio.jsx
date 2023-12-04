@@ -6,7 +6,7 @@ import {nanoid} from 'nanoid'
 // import data
 import portfolioData from 'data/portfolioData'
 
-function Portfolio() {
+export default function Portfolio() {
   const works = portfolioData.map(workItem => (
     <div key={nanoid()} className="workItem">
       <div className="videoBox">
@@ -29,5 +29,3 @@ function Portfolio() {
     </div>
   )
 }
-
-export default Portfolio

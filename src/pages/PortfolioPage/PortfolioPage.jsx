@@ -6,7 +6,7 @@ import Title from 'components/Title/Title'
 import Portfolio from 'components/Portfolio/Portfolio'
 import Footer from 'components/Footer/Footer'
 
-function PortfolioPage() {
+export default function PortfolioPage() {
   return (
     <div className="portfolioPageContainer">
       <Navbar />
@@ -16,5 +16,3 @@ function PortfolioPage() {
     </div>
   )
 }
-
-export default PortfolioPage

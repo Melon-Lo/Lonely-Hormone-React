@@ -9,7 +9,7 @@ import { ReactComponent as EmailIcon } from 'assets/icon/email.svg'
 // import data
 import contactData from 'data/contactData'
 
-function SocialBox() {
+export default function SocialBox() {
   return (
     <div className="socialBoxContainer">
       <div className="iconBox">
@@ -35,5 +35,3 @@ function SocialBox() {
     </div>
   )
 }
-
-export default SocialBox

@@ -10,7 +10,7 @@ import charactersData from 'data/charactersData'
 // import images
 import background from 'assets/text_background.png'
 
-function Introduction() {
+export default function Introduction() {
   const characters = (
     <div className="characters">
       {charactersData.map(character => (
@@ -38,5 +38,3 @@ function Introduction() {
     </div>
   )
 }
-
-export default Introduction

@@ -9,7 +9,7 @@ import timelineData from 'data/timelineData'
 // import img
 import bg from 'assets/text_background.png'
 
-function Timeline() {
+export default function Timeline() {
   const timeline = timelineData.map(timelineEvent => (
     <div key={nanoid()} className="timelineBox">
       <div className="leftInfo">
@@ -44,5 +44,3 @@ function Timeline() {
     </div>
   )
 }
-
-export default Timeline

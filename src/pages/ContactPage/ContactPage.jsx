@@ -13,7 +13,7 @@ import contactData from 'data/contactData'
 // import img
 import groupImg from 'assets/group.jpeg'
 
-function ContactPage() {
+export default function ContactPage() {
   return (
     <div className="contactPageContainer">
       <Navbar />
@@ -24,5 +24,3 @@ function ContactPage() {
     </div>
   )
 }
-
-export default ContactPage

@@ -1,11 +1,9 @@
 import './Title.scss'
 
-function Title({content}) {
+export default function Title({content}) {
   return (
     <div className="titleContainer">
       <div className="titleContent">{content}</div>
     </div>
   )
 }
-
-export default Title

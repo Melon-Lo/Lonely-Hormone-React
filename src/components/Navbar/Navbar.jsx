@@ -16,7 +16,7 @@ import { useContext, useState } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
 
 
-function Navbar() {
+export default function Navbar() {
   const [type, setType] = useState('navbar')
   const [isToggled, setIsToggled] = useState(false)
   const { windowWidth } = useContext(WindowWidthContext)
@@ -71,5 +71,3 @@ function Navbar() {
     </div>
   )
 }
-
-export default Navbar

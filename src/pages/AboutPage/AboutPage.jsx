@@ -13,7 +13,7 @@ import textData from 'data/textData'
 // import img
 import bg from 'assets/cover.png'
 
-function AboutPage() {
+export default function AboutPage() {
   return (
     <div className="aboutPageContainer">
       <Navbar />
@@ -27,5 +27,3 @@ function AboutPage() {
     </div>
   )
 }
-
-export default AboutPage

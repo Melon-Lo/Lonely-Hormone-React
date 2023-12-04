@@ -10,7 +10,7 @@ import logo from 'assets/logo_TC+EN.png'
 import linksData from 'data/linksData'
 import contactData from 'data/contactData'
 
-function Footer() {
+export default function Footer() {
   const linkSection = (
     <div className="linkSection">
       {linksData.map(linkItem => (
@@ -48,5 +48,3 @@ function Footer() {
     </div>
   )
 }
-
-export default Footer

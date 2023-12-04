@@ -7,7 +7,7 @@ import Title from 'components/Title/Title'
 import Introduction from 'components/Introduction/Introduction'
 import Footer from 'components/Footer/Footer'
 
-function MainPage() {
+export default function MainPage() {
   return (
     <div className="mainPageContainer">
       <Navbar />
@@ -18,5 +18,3 @@ function MainPage() {
     </div>
   )
 }
-
-export default MainPage

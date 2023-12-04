@@ -1,6 +1,6 @@
 import './InfoBox.scss'
 
-function InfoBox({content, img}) {
+export default function InfoBox({content, img}) {
   return (
     <div className="infoBoxContainer">
       <img 
@@ -13,5 +13,3 @@ function InfoBox({content, img}) {
     </div>
   )
 }
-
-export default InfoBox

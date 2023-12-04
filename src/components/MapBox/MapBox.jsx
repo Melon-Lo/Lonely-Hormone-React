@@ -3,7 +3,7 @@ import './MapBox.scss'
 // import data
 import contactData from 'data/contactData'
 
-function MapBox() {
+export default function MapBox() {
   return (
     <div className="mapBoxContainer">
       <iframe 
@@ -15,5 +15,3 @@ function MapBox() {
     </div>
   )
 }
-
-export default MapBox
