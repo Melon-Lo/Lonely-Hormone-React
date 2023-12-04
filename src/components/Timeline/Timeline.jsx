@@ -9,7 +9,13 @@ import timelineData from 'data/timelineData'
 // import img
 import bg from 'assets/text_background.png'
 
+// import hook
+import { useContext } from 'react'
+import { WindowWidthContext } from 'context/WindowWidthContext'
+
 export default function Timeline() {
+  const { windowWidth } = useContext(WindowWidthContext)
+
   const timeline = timelineData.map(timelineEvent => (
     <div key={nanoid()} className="timelineBox">
       <div className="leftInfo">
@@ -39,7 +45,7 @@ export default function Timeline() {
   ))
 
   return (
-    <div className="timelineContainer">
+    <div className={windowWidth > 768 ? "timelineContainer" : "smallTimelineContainer"}>
       {timeline}
     </div>
   )
