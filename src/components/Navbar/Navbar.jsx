@@ -2,7 +2,7 @@ import './Navbar.scss'
 
 // import dependencies
 import { nanoid } from 'nanoid'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 // import data
 import pagesData from 'data/pagesData'
@@ -17,18 +17,15 @@ import { WindowWidthContext } from 'context/WindowWidthContext'
 
 
 export default function Navbar() {
-  const basename = process.env.PUBLIC_URL
-
-  const [type, setType] = useState('navbar')
   const [isToggled, setIsToggled] = useState(false)
   const { windowWidth } = useContext(WindowWidthContext)
 
   const navigate = useNavigate()
 
   const pages = pagesData.map(page => (
-    <a key={nanoid()} href={page.href} className='page'>
+    <Link key={nanoid()} to={page.href} className='page'>
       {page.title}
-    </a>
+    </Link>
   ))
 
   return (
