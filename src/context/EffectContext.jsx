@@ -12,7 +12,6 @@ export default function EffectProvider({ children }) {
         anchorElement.scrollIntoView({ 
           behavior: "smooth" 
         })
-        console.log(anchorName)
       }
     }
   }

@@ -3,6 +3,12 @@
 
   .characters {
 
+    .anchor {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+
     .characterBox {
       position: relative;
       height: 400px;
@@ -12,8 +18,9 @@
 
       .lineBg {
         position: absolute;
-        top: 10%;
+        top: 50%;
         left: 0;
+        transform: translateY(-50%);
         width: 100%;
         height: 80%;
         z-index: 0;
