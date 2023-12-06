@@ -3,6 +3,13 @@ import { createContext } from "react";
 export const EffectContext = createContext()
 
 export default function EffectProvider({ children }) {
+  // scroll to the top
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
 
   // when the avatar is clicked, scroll to the clicked character
   function scrollToAnchor(anchorName) {
@@ -59,7 +66,7 @@ export default function EffectProvider({ children }) {
   }
 
   // when scrollingt to certain elements, show animation based on classNames
-  function addRemoveAnimationClass(className, animationClassName, anchor) {
+  function addRemoveAnimationClassName(className, animationClassName, anchor) {
     const animatedElements = document.getElementsByClassName(className)
 
     const handleScroll = () => {
@@ -92,12 +99,13 @@ export default function EffectProvider({ children }) {
   return (
     <EffectContext.Provider
       value={{
+        scrollToTop,
         scrollToAnchor,
         zoomIn,
         zoomOut,
         showName,
         hideName,
-        addRemoveAnimationClass,
+        addRemoveAnimationClassName,
       }}
     >
       {children}

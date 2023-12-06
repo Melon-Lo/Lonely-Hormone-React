@@ -36,7 +36,7 @@ export default function Navbar() {
         return setClassName('hidden')
       }
 
-      setClassName('slideOut')
+      setClassName('sidebarSlideOut')
       setTimeout(() => {
         setClassName('hidden')
       }, 1000)
@@ -47,13 +47,13 @@ export default function Navbar() {
 
   // if sidebar is open and screen width is larger than 768px, close the sidebar
   useEffect(() => {
-    const closeSideBar = () => {
+    const closesidebar = () => {
       if(windowWidth > 768) {
         setIsOpen(false)
       }
     }
     
-    closeSideBar()
+    closesidebar()
   })
 
   // render pages
@@ -91,7 +91,7 @@ export default function Navbar() {
           {pages}
         </div> :
 
-        // small screen
+        // small screen: sidebar
         <div 
           className="iconBox"
           onClick={() => {
@@ -106,7 +106,7 @@ export default function Navbar() {
       }
 
       {/* when the burger is toggled, show sidebar */}
-      <div className={isOpen ? "sideBarBox slideIn" : "sideBarBox " + className}>
+      <div className={isOpen ? "sidebarBox sidebarSlideIn" : "sidebarBox " + className}>
         {pages}
       </div>
     </div>

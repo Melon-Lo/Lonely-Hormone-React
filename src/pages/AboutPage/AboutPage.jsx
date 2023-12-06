@@ -5,6 +5,7 @@ import Navbar from 'components/Navbar/Navbar'
 import InfoBox from 'components/InfoBox/InfoBox'
 import Title from 'components/Title/Title'
 import Timeline from 'components/Timeline/Timeline'
+import BackToTopBox from 'components/BackToTopBox/BackToTopBox'
 import Footer from 'components/Footer/Footer'
 
 // import data
@@ -33,6 +34,7 @@ export default function AboutPage() {
       />
       <Title content={'重大紀事'}/>
       <Timeline />
+      <BackToTopBox />
       <Footer />
     </div>
   )

@@ -16,6 +16,7 @@ import groupImg from 'assets/group.jpeg'
 // import hook
 import { useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
+import BackToTopBox from 'components/BackToTopBox/BackToTopBox'
 
 
 export default function ContactPage() {
@@ -31,6 +32,7 @@ export default function ContactPage() {
       <SocialBox />
       <MapBox />
       <InfoBox img={groupImg} content={contactData.contactWords}/>
+      <BackToTopBox />
       <Footer />
     </div>
   )

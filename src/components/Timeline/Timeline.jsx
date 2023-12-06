@@ -16,13 +16,13 @@ import { EffectContext } from 'context/EffectContext'
 
 export default function Timeline() {
   const { windowWidth } = useContext(WindowWidthContext)
-  const { addRemoveAnimationClass } = useContext(EffectContext)
+  const { addRemoveAnimationClassName } = useContext(EffectContext)
 
   useEffect(() => {
-    addRemoveAnimationClass("circle", "circleAnimation")
-    addRemoveAnimationClass("dateBox", "textAnimation")
-    addRemoveAnimationClass("text", "textAnimation")
-    addRemoveAnimationClass("infoImg", "infoImgAnimation")
+    addRemoveAnimationClassName("circle", "circleAnimation")
+    addRemoveAnimationClassName("dateBox", "textAnimation")
+    addRemoveAnimationClassName("text", "textAnimation")
+    addRemoveAnimationClassName("infoImg", "infoImgAnimation")
   }, [])
 
   const timeline = timelineData.map(timelineEvent => (

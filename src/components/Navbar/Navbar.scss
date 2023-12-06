@@ -96,7 +96,7 @@
 
   // when the burger/cross is toggled
 
-  .sideBarBox, .hidden {
+  .sidebarBox, .hidden {
     position: fixed;
     right: 0;
     width: 50%;
@@ -144,15 +144,15 @@
 
 // animation
 
-.slideIn {
-  animation: slideIn 1s;
+.sidebarSlideIn {
+  animation: sidebarSlideIn 1s;
 }
 
-.slideOut {
-  animation: slideOut 1s;
+.sidebarSlideOut {
+  animation: sidebarSlideOut 1s;
 }
 
-@keyframes slideIn {
+@keyframes sidebarSlideIn {
   from {
     transform: translateX(100%);
   }
@@ -162,7 +162,7 @@
   }
 }
 
-@keyframes slideOut {
+@keyframes sidebarSlideOut {
   from {
     transform: translateX(0);
   }

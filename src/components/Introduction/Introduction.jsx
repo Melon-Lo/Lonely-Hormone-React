@@ -18,18 +18,18 @@ import { EffectContext } from 'context/EffectContext'
 
 export default function Introduction() {
   const { windowWidth } = useContext(WindowWidthContext)
-  const { addRemoveAnimationClass } = useContext(EffectContext)
+  const { addRemoveAnimationClassName } = useContext(EffectContext)
 
-  const sloganSpeed = 150
-  const introSpeed = 50
+  const sloganSpeed = 100
+  const introSpeed = 30
 
   useEffect(() => {
-    addRemoveAnimationClass('headBox left', 'fadeInLeft')
-    addRemoveAnimationClass('headBox right', 'fadeInRight')
-    addRemoveAnimationClass('headBoxLeft', 'fadeInLeft')
-    addRemoveAnimationClass('headBoxRight', 'fadeInRight')
-    addRemoveAnimationClass('nameRight', 'fadeInRight')
-    addRemoveAnimationClass('nameLeft', 'fadeInLeft')
+    addRemoveAnimationClassName('headBox left', 'fadeInLeft')
+    addRemoveAnimationClassName('headBox right', 'fadeInRight')
+    addRemoveAnimationClassName('headBoxLeft', 'fadeInLeft')
+    addRemoveAnimationClassName('headBoxRight', 'fadeInRight')
+    addRemoveAnimationClassName('nameRight', 'fadeInRight')
+    addRemoveAnimationClassName('nameLeft', 'fadeInLeft')
   }, [])
 
   const characters = (

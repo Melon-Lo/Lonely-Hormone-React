@@ -4,6 +4,7 @@ import './PortfolioPage.scss'
 import Navbar from 'components/Navbar/Navbar'
 import Title from 'components/Title/Title'
 import Portfolio from 'components/Portfolio/Portfolio'
+import BackToTopBox from 'components/BackToTopBox/BackToTopBox'
 import Footer from 'components/Footer/Footer'
 
 // import hook
@@ -22,6 +23,7 @@ export default function PortfolioPage() {
       <Navbar />
       <Title content={'Youtube 作品集'} />
       <Portfolio />
+      <BackToTopBox />
       <Footer />
     </div>
   )
