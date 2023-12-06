@@ -3,6 +3,7 @@ import './Introduction.scss'
 // import dependencies
 import clsx from 'clsx'
 import { nanoid } from 'nanoid'
+import TypeIt from "typeit-react"
 
 // import data
 import charactersData from 'data/charactersData'
@@ -19,11 +20,16 @@ export default function Introduction() {
   const { windowWidth } = useContext(WindowWidthContext)
   const { addRemoveAnimationClass } = useContext(EffectContext)
 
+  const sloganSpeed = 150
+  const introSpeed = 50
+
   useEffect(() => {
     addRemoveAnimationClass('headBox left', 'fadeInLeft')
     addRemoveAnimationClass('headBox right', 'fadeInRight')
     addRemoveAnimationClass('headBoxLeft', 'fadeInLeft')
     addRemoveAnimationClass('headBoxRight', 'fadeInRight')
+    addRemoveAnimationClass('nameRight', 'fadeInRight')
+    addRemoveAnimationClass('nameLeft', 'fadeInLeft')
   }, [])
 
   const characters = (
@@ -52,20 +58,55 @@ export default function Introduction() {
                 // big screen
                 <>
                   <div className="name">{character.name}</div>
-                  <div className="slogan typing">{character.slogan}</div>
+                  <div className="slogan">
+                    <TypeIt
+                      options={{
+                        speed: sloganSpeed,
+                        waitUntilVisible: true,
+                      }}
+                    >
+                      {character.slogan}
+                    </TypeIt>
+                  </div>
                   <div className="contentBox">
                     <img src={background} alt="background" className='bg' />
-                    <div className="content">{character.introduction}</div>
+                    <TypeIt
+                      options={{
+                        speed: introSpeed,
+                        waitUntilVisible: true,
+                      }}
+                    >
+                      <div className="content">{character.introduction}</div>
+                    </TypeIt>
+                    
                   </div>
                 </> :
 
                 // small screen
                 <>
                   <div className={"name" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>{character.name}</div>
-                  <div className={"typing slogan" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>{character.slogan}</div>
+                  <div className={"slogan" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>
+                    <TypeIt
+                      options={{
+                        speed: sloganSpeed,
+                        waitUntilVisible: true,
+                      }}
+                    >
+                      {character.slogan}
+                    </TypeIt>
+                  </div>
                   <div className="contentBox">
                     <img src={background} alt="background" className={'bg' + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})} />
-                    <div className={"content" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>{character.introduction}</div>
+                    <div className={"content" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>
+                      <TypeIt
+                        options={{
+                          speed: introSpeed,
+                          waitUntilVisible: true,
+                        }}
+                      >
+                        {character.introduction}
+                      </TypeIt>
+                    </div>
                   </div>
                 </>
               }

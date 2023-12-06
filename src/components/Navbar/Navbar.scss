@@ -40,6 +40,7 @@
 
       &:hover {
         font-weight: 1000;
+        color: black;
       }
 
       &:hover::after {
@@ -47,8 +48,12 @@
       }
     }
 
+    .page {
+      color: rgb(100, 100, 100);
+    }
+
     .activePage {
-      color: red;
+      color: rgb(0, 0, 0);
       font-weight: 1000;
     }
 
@@ -62,10 +67,6 @@
       transform: scale(0, 1);
       transition: 0.2s ease-out;
     }
-
-    .activePage::after {
-      transform: scale(1, 1);
-      border-bottom: 3px rgb(255, 0, 0) solid;    }
   }
 
   ////////// screen < 768px
@@ -109,6 +110,10 @@
       margin: 40px 30px 0 0;
       font-size: 1.5rem;
       cursor: pointer;
+    }
+
+    .page {
+      color: rgb(100, 100, 100);
     }
 
     .activePage {

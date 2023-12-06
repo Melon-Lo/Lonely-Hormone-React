@@ -107,7 +107,7 @@
   .timelineBox {
     width: 100%;
     height: 200px;
-    margin: 80px 0;
+    margin: 100px 0;
     display: flex;
     justify-content: space-between;
 
@@ -207,6 +207,16 @@
   animation: circleAnimation 0.6s ;
 }
 
+.textAnimation {
+  animation: textAnimation 0.8s ease-in;
+}
+
+.infoImgAnimation {
+  animation: infoImgAnimation 0.8s ease-in;
+}
+
+// animation keyframes
+
 @keyframes circleAnimation {
   0% {
     opacity: 0;
@@ -224,16 +234,12 @@
   }
 }
 
-.dateBoxAnimation {
-  animation: dateBoxAnimation 0.8s ease-in;
-}
-
-@keyframes dateBoxAnimation {
+@keyframes textAnimation {
   0% {
     opacity: 0;
   }
 
-  90% {
+  80% {
     opacity: 0;
   }
 
@@ -242,14 +248,10 @@
   }
 }
 
-.infoImgAnimation {
-  animation: infoImgAnimation 0.8s ease-in;
-}
-
 @keyframes infoImgAnimation {
   from {
     opacity: 0;
-    transform: translate(0, -20px);
+    transform: translate(0, -40px);
   }
   to {
     opacity: 1;

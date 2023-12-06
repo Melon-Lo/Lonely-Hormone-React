@@ -20,7 +20,8 @@ export default function Timeline() {
 
   useEffect(() => {
     addRemoveAnimationClass("circle", "circleAnimation")
-    addRemoveAnimationClass("dateBox", "dateBoxAnimation")
+    addRemoveAnimationClass("dateBox", "textAnimation")
+    addRemoveAnimationClass("text", "textAnimation")
     addRemoveAnimationClass("infoImg", "infoImgAnimation")
   }, [])
 

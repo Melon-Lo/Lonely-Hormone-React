@@ -1,13 +1,5 @@
 const linksData = [
   {
-    title: '客服服務',
-    links: [
-      {
-        title: 'FAQ',
-        href: '',
-      },
-    ]
-  },{
     title: '關於我們',
     links: [
       {
@@ -19,7 +11,8 @@ const linksData = [
         href: '',
       },
     ]
-  },{
+  },
+  {
     title: '資訊',
     links: [
       {
