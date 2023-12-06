@@ -13,7 +13,17 @@ import textData from 'data/textData'
 // import img
 import bg from 'assets/cover.png'
 
+// import hook
+import { useEffect, useContext } from 'react'
+import { PageContext } from 'context/PageContext'
+
 export default function AboutPage() {
+  const { setCurrentPage } = useContext(PageContext)
+
+  useEffect(() => {
+    setCurrentPage('/about')
+  }, [])
+
   return (
     <div className="aboutPageContainer">
       <Navbar />

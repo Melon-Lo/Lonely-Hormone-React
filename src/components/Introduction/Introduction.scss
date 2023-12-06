@@ -243,17 +243,17 @@
 // fade-in animation
 
 .fadeInLeft {
-  animation: fadeInLeft 1.5s;
+  animation: fadeInLeft 1.5s ease-out;
 }
 
 .fadeInRight {
-  animation: fadeInRight 1.5s;
+  animation: fadeInRight 1.5s ease-out;
 }
 
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translate(-50px);
+    transform: translate(-100px);
   }
 
   100% {
@@ -265,7 +265,7 @@
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translate(50px);
+    transform: translate(100px);
   }
 
   100% {

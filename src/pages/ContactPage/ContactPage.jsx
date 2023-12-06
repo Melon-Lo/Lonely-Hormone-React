@@ -13,7 +13,18 @@ import contactData from 'data/contactData'
 // import img
 import groupImg from 'assets/group.jpeg'
 
+// import hook
+import { useEffect, useContext } from 'react'
+import { PageContext } from 'context/PageContext'
+
+
 export default function ContactPage() {
+  const { setCurrentPage } = useContext(PageContext)
+
+  useEffect(() => {
+    setCurrentPage('/contact')
+  }, [])
+
   return (
     <div className="contactPageContainer">
       <Navbar />

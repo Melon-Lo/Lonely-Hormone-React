@@ -10,12 +10,19 @@ import timelineData from 'data/timelineData'
 import bg from 'assets/text_background.png'
 
 // import hook
-import { useContext } from 'react'
+import { useEffect, useContext } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
 import { EffectContext } from 'context/EffectContext'
 
 export default function Timeline() {
   const { windowWidth } = useContext(WindowWidthContext)
+  const { addRemoveAnimationClass } = useContext(EffectContext)
+
+  useEffect(() => {
+    addRemoveAnimationClass("circle", "circleAnimation")
+    addRemoveAnimationClass("dateBox", "dateBoxAnimation")
+    addRemoveAnimationClass("infoImg", "infoImgAnimation")
+  }, [])
 
   const timeline = timelineData.map(timelineEvent => (
     <div key={nanoid()} className="timelineBox">

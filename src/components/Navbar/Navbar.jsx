@@ -100,7 +100,7 @@ export default function Navbar() {
           }}
         >
           { isOpen ? 
-            <CrossIcon className="icon"/> : <BurgerIcon className="icon" />
+            <CrossIcon className="cross"/> : <BurgerIcon className="burger " />
           }
         </div>
       }
