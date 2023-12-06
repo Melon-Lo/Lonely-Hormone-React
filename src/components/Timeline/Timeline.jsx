@@ -12,6 +12,7 @@ import bg from 'assets/text_background.png'
 // import hook
 import { useContext } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
+import { EffectContext } from 'context/EffectContext'
 
 export default function Timeline() {
   const { windowWidth } = useContext(WindowWidthContext)
