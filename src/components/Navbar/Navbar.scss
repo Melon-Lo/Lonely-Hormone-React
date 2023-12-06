@@ -32,7 +32,7 @@
     align-items: center;
     margin: 0.5rem;
 
-    .page {
+    .page, .activePage {
       position: relative;
       margin: 1rem;
       font-size: 1.2rem;
@@ -47,16 +47,25 @@
       }
     }
 
-    .page::after {
+    .activePage {
+      color: red;
+      font-weight: 1000;
+    }
+
+    .page::after, .activePage::after {
       position: absolute;
       content: "";
       left: 0;
-      bottom: -0.5rem;
+      bottom: -5px;
       border-bottom: 3px black solid;
       width: 100%;
       transform: scale(0, 1);
       transition: 0.2s ease-out;
     }
+
+    .activePage::after {
+      transform: scale(1, 1);
+      border-bottom: 3px rgb(255, 0, 0) solid;    }
   }
 
   ////////// screen < 768px

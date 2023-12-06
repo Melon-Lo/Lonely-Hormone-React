@@ -15,16 +15,26 @@ import { ReactComponent as CrossIcon} from 'assets/icon/cross.svg'
 // import hook
 import { useContext, useState, useEffect } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
+import { PageContext } from 'context/PageContext'
 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const { windowWidth } = useContext(WindowWidthContext)
+  const { currentPage, setCurrentPage, pathname } = useContext(PageContext)
 
   const navigate = useNavigate()
 
   const pages = pagesData.map(page => (
-    <Link key={nanoid()} to={page.href} className='page'>
+    <Link 
+      key={nanoid()} 
+      to={page.href} 
+      className={currentPage === page.href ? 'activePage' : 'page'}
+      onClick={() => {
+        setCurrentPage(page.href)
+        console.log(currentPage)
+      }}
+    >
       {page.title}
     </Link>
   ))
@@ -50,12 +60,12 @@ export default function Navbar() {
       </div>
 
       { windowWidth > 768 ? 
-        // pages: when window width is larger than 768px
+        // big screen
         <div className="pagesBox">
           {pages}
         </div> :
 
-        // burger/cross: when window width is smaller than 768px
+        // small screen
         <div 
           className="iconBox"
           onClick={() => {

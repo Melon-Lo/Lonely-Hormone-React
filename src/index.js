@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 
 // import context
+import PageContext from 'context/PageContext';
 import WindowWidthProvider from 'context/WindowWidthContext';
 import EffectProvider from 'context/EffectContext';
 
@@ -12,7 +13,9 @@ root.render(
   <React.StrictMode>
     <EffectProvider>
       <WindowWidthProvider>
-        <App />
+        <PageContext>
+          <App />
+        </PageContext>
       </WindowWidthProvider>
     </EffectProvider>
   </React.StrictMode>
