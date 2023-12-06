@@ -58,6 +58,30 @@ export default function EffectProvider({ children }) {
     }
   }
 
+  // when scrollingt to certain elements, show animation based on classNames
+  function addRemoveAnimationClass(className, animationClassName) {
+    const animatedElements = document.getElementsByClassName(className);
+
+    const handleScroll = () => {
+      Array.from(animatedElements).forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight) {
+          element.classList.add(animationClassName);
+        } else {
+          element.classList.remove(animationClassName);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }
+
   return (
     <EffectContext.Provider
       value={{
@@ -66,6 +90,7 @@ export default function EffectProvider({ children }) {
         zoomOut,
         showName,
         hideName,
+        addRemoveAnimationClass,
       }}
     >
       {children}

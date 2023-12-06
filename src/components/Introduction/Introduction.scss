@@ -24,6 +24,7 @@
         width: 100%;
         height: 80%;
         z-index: 0;
+        object-fit: cover;
       }
 
       // headBox
@@ -122,6 +123,7 @@
         width: 100%;
         height: 80%;
         z-index: 0;
+        object-fit: cover;
       }
 
       // headBox
@@ -151,7 +153,6 @@
       .introductionBox {
         position: relative;
         top: 15%;
-
         width: 100%;
         height: 80%;
         z-index: 1;
@@ -232,16 +233,6 @@
           }
         }
       }
-
-      // left & right
-
-      // .left {
-      //   left: -10%;
-      // }
-
-      // .right {
-      //   right: -10%;
-      // }
     }
   }
 }
@@ -277,17 +268,5 @@
   100% {
     opacity: 1;
     transform: translate(0);
-  }
-}
-
-// typing animation
-
-.typing {
-  animation: typing 1s ease-out forwards;
-}
-
-@keyframes typing {
-  to {
-    background-size: 100% 100%;
   }
 }
