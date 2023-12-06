@@ -11,6 +11,7 @@ export default function BackToTopBox() {
   const [isHover, setIsHover] = useState(false)
   const { scrollToTop, addRemoveAnimationClassName } = useContext(EffectContext)
   console.log(isHover)
+  const content = '回到頂部'
 
   useEffect(() => {
     addRemoveAnimationClassName("backToTopBoxContainer", "slideIn")
@@ -19,13 +20,16 @@ export default function BackToTopBox() {
   return (
     <div 
       className="backToTopBoxContainer"
-      onClick={scrollToTop}
+      onClick={() => {
+        scrollToTop()
+        setIsHover(false)
+      }}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
       <img className="upIcon" src={upIcon} alt="upIcon" />
       { isHover && 
-        <div className="content">回到頂部</div>
+        <div className="content">{content}</div>
       }
     </div>
   )
