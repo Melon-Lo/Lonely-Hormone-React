@@ -19,12 +19,44 @@ import { PageContext } from 'context/PageContext'
 
 
 export default function Navbar() {
+  const [isToggledBefore, setIsToggledBefore] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [className, setClassName] = useState('')
   const { windowWidth } = useContext(WindowWidthContext)
-  const { currentPage, setCurrentPage, pathname } = useContext(PageContext)
+  const { currentPage, setCurrentPage } = useContext(PageContext)
 
   const navigate = useNavigate()
 
+  // when closing sidebar, change the className from "slideOut" to "hidden" after 1s
+  useEffect((e) => {
+    const changeClassName = () => {
+
+      // sidebar is hidden at first
+      if(!isToggledBefore) {
+        return setClassName('hidden')
+      }
+
+      setClassName('slideOut')
+      setTimeout(() => {
+        setClassName('hidden')
+      }, 1000)
+    }
+
+    changeClassName()
+  }, [isOpen])
+
+  // if sidebar is open and screen width is larger than 768px, close the sidebar
+  useEffect(() => {
+    const closeSideBar = () => {
+      if(windowWidth > 768) {
+        setIsOpen(false)
+      }
+    }
+    
+    closeSideBar()
+  })
+
+  // render pages
   const pages = pagesData.map(page => (
     <Link 
       key={nanoid()} 
@@ -38,12 +70,6 @@ export default function Navbar() {
       {page.title}
     </Link>
   ))
-
-  useEffect(() => {
-    if(windowWidth > 768) {
-      setIsOpen(false)
-    }
-  })
 
   return (
     <div className="navBarContainer">
@@ -69,6 +95,7 @@ export default function Navbar() {
         <div 
           className="iconBox"
           onClick={() => {
+            setIsToggledBefore(true)
             setIsOpen(!isOpen)
           }}
         >
@@ -79,7 +106,7 @@ export default function Navbar() {
       }
 
       {/* when the burger is toggled, show sidebar */}
-      <div className={isOpen ? "sideBarBox" : "sideBarBox hidden"}>
+      <div className={isOpen ? "sideBarBox slideIn" : "sideBarBox " + className}>
         {pages}
       </div>
     </div>

@@ -19,6 +19,14 @@
     justify-content: space-around;
     align-items: flex-end;
 
+    &::before {
+      content: '點我，可以更認識我。';
+      position: absolute;
+      bottom: -50px;
+      color: white;
+      font-size: 1.2rem;
+    }
+
     .characterBox {
       position: relative;
       width: 20%;

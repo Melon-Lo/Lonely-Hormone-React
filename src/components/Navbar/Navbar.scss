@@ -74,6 +74,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 80px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -97,12 +98,21 @@
     flex-direction: column;
     align-items: flex-end;
     padding-top: 80px;
-    animation: slideIn 0.6s ease-out;
 
-    .page {
+    .page, .activePage {
       margin: 40px 30px 0 0;
       font-size: 1.5rem;
       cursor: pointer;
+    }
+
+    .activePage {
+      font-weight: 1000;
+
+      &::before {
+        content: '';
+        margin-right: 10px;
+        border-right: 3px solid black;
+      }
     }
 
     // background
@@ -115,13 +125,21 @@
     box-shadow: 0px -3px 5px 5px rgba(0, 0, 0, 0.5);
   }
 
+  // hidden
   .hidden {
     display: none;
-    animation: slideOut 0.6s ease-out;
   }
 }
 
 // animation
+
+.slideIn {
+  animation: slideIn 1s;
+}
+
+.slideOut {
+  animation: slideOut 1s;
+}
 
 @keyframes slideIn {
   from {
@@ -135,13 +153,10 @@
 
 @keyframes slideOut {
   from {
-    display: flex;
-    opacity: 1;
     transform: translateX(0);
   }
 
   to {
-    opacity: 1;
     transform: translateX(100%);
   }
 }
