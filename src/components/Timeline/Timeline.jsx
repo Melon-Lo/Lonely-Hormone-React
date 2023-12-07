@@ -1,7 +1,7 @@
 import './Timeline.scss'
 
 // import dependencies
-import {nanoid} from 'nanoid'
+import { nanoid } from 'nanoid'
 
 // import data
 import timelineData from 'data/timelineData'

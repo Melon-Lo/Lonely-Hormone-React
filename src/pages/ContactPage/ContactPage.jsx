@@ -20,10 +20,12 @@ import { PageContext } from 'context/PageContext'
 import { EffectContext } from 'context/EffectContext'
 import BackToTopBox from 'components/BackToTopBox/BackToTopBox'
 
-
 export default function ContactPage() {
   const { setCurrentPage } = useContext(PageContext)
   const { scrollToTop } = useContext(EffectContext)
+  const topTitleContent = '社群媒體'
+  const midTitleContent = '我們的所在處'
+  const btnTitleContent = '最後，別忘了'
 
   useEffect(() => {
     setCurrentPage('/contact')
@@ -33,11 +35,11 @@ export default function ContactPage() {
   return (
     <div className="contactPageContainer">
       <Navbar />
-      <Title content={'社群媒體'} />
+      <Title content={topTitleContent} />
       <SocialBox />
-      <Title content={'我們的所在處'} />
+      <Title content={midTitleContent} />
       <MapBox />
-      <Title content={'最後，別忘了'} />
+      <Title content={btnTitleContent} />
       <InfoBox img={groupImg} content={contactData.contactWords}/>
       <BackToTopBox />
       <Footer />

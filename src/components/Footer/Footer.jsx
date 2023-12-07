@@ -1,7 +1,7 @@
 import './Footer.scss'
 
 // import dependencies
-import {nanoid} from 'nanoid'
+import { nanoid } from 'nanoid'
 import { Link } from 'react-router-dom'
 
 // import img
@@ -26,7 +26,13 @@ export default function Footer() {
           <div className="linkTitle">{linkItem.title}</div>
           <div className="links">
             {linkItem.links.map(link => (
-              <Link key={nanoid()} href={link.href} className="link">{link.title}</Link>
+              <Link 
+                key={nanoid()} 
+                to={link.href} 
+                className="link"
+              >
+                {link.title}
+              </Link>
             ))}
           </div>
         </div>
@@ -41,7 +47,7 @@ export default function Footer() {
         {socialMediaData.map(socialMedia => 
           <Link
             key={nanoid()}
-            href={socialMedia.href}
+            to={socialMedia.href}
             className="socialMedia"
           >
             {socialMedia.title}
