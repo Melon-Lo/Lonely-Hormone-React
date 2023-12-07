@@ -22,6 +22,7 @@ import { EffectContext } from 'context/EffectContext'
 export default function AboutPage() {
   const { setCurrentPage } = useContext(PageContext)
   const { scrollToTop } = useContext(EffectContext)
+  const titleContent = '重大紀事'
 
   useEffect(() => {
     setCurrentPage('/about')
@@ -31,11 +32,8 @@ export default function AboutPage() {
   return (
     <div className="aboutPageContainer">
       <Navbar />
-      <InfoBox 
-        content={textData.introduction}
-        img={bg}
-      />
-      <Title content={'重大紀事'}/>
+      <InfoBox content={textData.introduction} img={bg} />
+      <Title content={titleContent}/>
       <Timeline />
       <BackToTopBox />
       <Footer />

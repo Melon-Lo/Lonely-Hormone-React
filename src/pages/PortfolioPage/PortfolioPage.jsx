@@ -15,6 +15,7 @@ import { EffectContext } from 'context/EffectContext'
 export default function PortfolioPage() {
   const { setCurrentPage } = useContext(PageContext)
   const { scrollToTop } = useContext(EffectContext)
+  const titleContent = 'Youtube 作品集'
 
   useEffect(() => {
     setCurrentPage('/portfolio')
@@ -24,7 +25,7 @@ export default function PortfolioPage() {
   return (
     <div className="portfolioPageContainer">
       <Navbar />
-      <Title content={'Youtube 作品'} />
+      <Title content={titleContent} />
       <Portfolio />
       <BackToTopBox />
       <Footer />

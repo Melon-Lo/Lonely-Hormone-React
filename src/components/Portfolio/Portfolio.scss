@@ -1,4 +1,4 @@
-.portfolioContainer {
+.portfolioContainer, .smallPortfolioContainer {
   width: 100%;
   margin: 30px 0;
   display: flex;
@@ -8,6 +8,7 @@
   .workItem {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
     height: 200px;
     margin: 50px 0;
@@ -46,6 +47,19 @@
         padding: 5px 15px;
         
       }
+    }
+  }
+}
+
+// screen < 768px
+
+.smallPortfolioContainer {
+
+  .workItem {
+
+    .videoBox {
+      width: 150px;
+      height: 150px;
     }
   }
 }

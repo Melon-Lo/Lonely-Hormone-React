@@ -16,6 +16,7 @@ import { EffectContext } from 'context/EffectContext'
 export default function MainPage() {
   const { setCurrentPage } = useContext(PageContext)
   const { scrollToTop } = useContext(EffectContext)
+  const titleContent = '人物介紹'
 
   useEffect(() => {
     setCurrentPage('/main')
@@ -26,7 +27,7 @@ export default function MainPage() {
     <div className="mainPageContainer">
       <Navbar />
       <Characters />
-      <Title content={'人物介紹'}/>
+      <Title content={titleContent}/>
       <Introduction />
       <BackToTopBox />
       <Footer />

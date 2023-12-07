@@ -17,7 +17,6 @@ import { useContext, useState, useEffect } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
 import { PageContext } from 'context/PageContext'
 
-
 export default function Navbar() {
   const [isToggledBefore, setIsToggledBefore] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +27,7 @@ export default function Navbar() {
   const navigate = useNavigate()
 
   // when closing sidebar, change the className from "slideOut" to "hidden" after 1s
-  useEffect((e) => {
+  useEffect(() => {
     const changeClassName = () => {
 
       // sidebar is hidden at first
@@ -91,7 +90,7 @@ export default function Navbar() {
           {pages}
         </div> :
 
-        // small screen: sidebar
+        // screen < 768px: sidebar
         <div 
           className="iconBox"
           onClick={() => {
