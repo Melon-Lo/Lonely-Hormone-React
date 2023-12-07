@@ -24,7 +24,7 @@ export default function PortfolioPage() {
   return (
     <div className="portfolioPageContainer">
       <Navbar />
-      <Title content={'Youtube 作品集'} />
+      <Title content={'Youtube 作品'} />
       <Portfolio />
       <BackToTopBox />
       <Footer />

@@ -2,15 +2,23 @@ import './Footer.scss'
 
 // import dependencies
 import {nanoid} from 'nanoid'
+import { Link } from 'react-router-dom'
 
 // import img
 import logo from 'assets/logo_TC+EN.png'
 
 // import data
 import linksData from 'data/linksData'
-import contactData from 'data/contactData'
+import socialMediaData from 'data/socialMediaData'
+
+// import hook
+import { useContext } from 'react'
+import { WindowWidthContext } from 'context/WindowWidthContext'
 
 export default function Footer() {
+  const { windowWidth } = useContext(WindowWidthContext)
+  const contactTitle = '社群媒體'
+
   const linkSection = (
     <div className="linkSection">
       {linksData.map(linkItem => (
@@ -18,7 +26,7 @@ export default function Footer() {
           <div className="linkTitle">{linkItem.title}</div>
           <div className="links">
             {linkItem.links.map(link => (
-              <a key={nanoid()} href={link.href} className="link">{link.title}</a>
+              <Link key={nanoid()} href={link.href} className="link">{link.title}</Link>
             ))}
           </div>
         </div>
@@ -28,16 +36,23 @@ export default function Footer() {
 
   const contactSection = (
     <div className="contactSection">
-      <div className="contactTitle">{contactData.title}</div>
-      <div className="tel">{'電話：' + contactData.tel}</div>
-      {contactData.socialMedia.map(socialMedia => (
-        <a key={nanoid()} href={socialMedia.href} className="socialMedia">{socialMedia.title}</a>
-      ))}
+      <div className="contactTitle">{contactTitle}</div>
+      <div className="socialMediaCollection">
+        {socialMediaData.map(socialMedia => 
+          <Link
+            key={nanoid()}
+            href={socialMedia.href}
+            className="socialMedia"
+          >
+            {socialMedia.title}
+          </Link>
+        )}
+      </div>
     </div>
   )
 
   return (
-    <div className="footerContainer">
+    <div className={ windowWidth > 768 ? "footerContainer" : "smallFooterContainer"}>
       <div className="leftFooter">
         <img src={logo} alt="logo" className="logo" />
       </div>

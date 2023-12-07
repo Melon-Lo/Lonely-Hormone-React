@@ -1,30 +1,25 @@
 const linksData = [
   {
-    title: '關於我們',
+    title: '頁面快轉',
     links: [
       {
-        title: '品牌故事',
-        href: '',
+        title: '人物介紹',
+        href: '/main',
       },
       {
-        title: 'Press Kit',
-        href: '',
+        title: '關於我們',
+        href: '/about',
+      },
+      {
+        title: '作品集',
+        href: '/portfolio',
+      },
+      {
+        title: '聯絡我們',
+        href: '/contact',
       },
     ]
   },
-  {
-    title: '資訊',
-    links: [
-      {
-        title: '隱私權政策',
-        href: '',
-      },
-      {
-        title: 'Cookie',
-        href: '',
-      },
-    ]
-  }
 ]
 
 export default linksData
