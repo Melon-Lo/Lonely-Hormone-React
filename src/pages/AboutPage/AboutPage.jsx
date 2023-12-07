@@ -17,12 +17,15 @@ import bg from 'assets/cover.png'
 // import hook
 import { useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
+import { EffectContext } from 'context/EffectContext'
 
 export default function AboutPage() {
   const { setCurrentPage } = useContext(PageContext)
+  const { scrollToTop } = useContext(EffectContext)
 
   useEffect(() => {
     setCurrentPage('/about')
+    scrollToTop()
   }, [])
 
   return (

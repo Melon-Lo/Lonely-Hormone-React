@@ -17,14 +17,17 @@ import groupImg from 'assets/group.jpeg'
 // import hook
 import { useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
+import { EffectContext } from 'context/EffectContext'
 import BackToTopBox from 'components/BackToTopBox/BackToTopBox'
 
 
 export default function ContactPage() {
   const { setCurrentPage } = useContext(PageContext)
+  const { scrollToTop } = useContext(EffectContext)
 
   useEffect(() => {
     setCurrentPage('/contact')
+    scrollToTop()
   }, [])
 
   return (

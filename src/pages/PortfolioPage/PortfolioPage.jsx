@@ -10,12 +10,15 @@ import Footer from 'components/Footer/Footer'
 // import hook
 import { useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
+import { EffectContext } from 'context/EffectContext'
 
 export default function PortfolioPage() {
   const { setCurrentPage } = useContext(PageContext)
+  const { scrollToTop } = useContext(EffectContext)
 
   useEffect(() => {
     setCurrentPage('/portfolio')
+    scrollToTop()
   }, [])
 
   return (
