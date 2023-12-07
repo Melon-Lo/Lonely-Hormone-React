@@ -17,12 +17,14 @@ import { EffectContext } from 'context/EffectContext'
 export default function Timeline() {
   const { windowWidth } = useContext(WindowWidthContext)
   const { addRemoveAnimationClassName } = useContext(EffectContext)
+  const textContent = '故事還在繼續⋯⋯'
 
   useEffect(() => {
     addRemoveAnimationClassName("circle", "circleAnimation")
     addRemoveAnimationClassName("dateBox", "textAnimation")
     addRemoveAnimationClassName("text", "textAnimation")
     addRemoveAnimationClassName("infoImg", "infoImgAnimation")
+    addRemoveAnimationClassName("bottomText", "infoImgAnimation")
   }, [])
 
   const timeline = timelineData.map(timelineEvent => (
@@ -56,6 +58,7 @@ export default function Timeline() {
   return (
     <div className={windowWidth > 768 ? "timelineContainer" : "smallTimelineContainer"}>
       {timeline}
+      <div className="bottomText">{textContent}</div>
     </div>
   )
 }

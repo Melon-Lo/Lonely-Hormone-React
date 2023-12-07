@@ -96,6 +96,12 @@
       }
     }
   }
+
+  .bottomText {
+    padding-top: 150px;
+    font-size: 1.2rem;
+    color: rgb(229, 229, 229);
+  }
 }
 
 // screen < 768px
@@ -199,20 +205,26 @@
       }
     }
   }
+
+  .bottomText {
+    padding-top: 150px;
+    font-size: 1.2rem;
+    color: rgb(229, 229, 229);
+  }
 }
 
 // animation
 
 .circleAnimation {
-  animation: circleAnimation 0.6s ;
+  animation: circleAnimation 0.8s ;
 }
 
 .textAnimation {
-  animation: textAnimation 0.8s ease-in;
+  animation: textAnimation 1.2s ease-in;
 }
 
 .infoImgAnimation {
-  animation: infoImgAnimation 0.8s ease-in;
+  animation: infoImgAnimation 1.2s ease-in;
 }
 
 // animation keyframes
