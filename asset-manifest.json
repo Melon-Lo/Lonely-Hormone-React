@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Lonely-Hormone-React/static/css/main.1be5a0a0.css",
-    "main.js": "/Lonely-Hormone-React/static/js/main.fa72d2cb.js",
+    "main.css": "/Lonely-Hormone-React/static/css/main.9f4699fe.css",
+    "main.js": "/Lonely-Hormone-React/static/js/main.4881701a.js",
     "static/media/cover.png": "/Lonely-Hormone-React/static/media/cover.6da910a6df34a37525bb.png",
     "static/media/bg without people.png": "/Lonely-Hormone-React/static/media/bg without people.b7f9b9b11ab62cd39afe.png",
     "static/media/gray bg.jpeg": "/Lonely-Hormone-React/static/media/gray bg.6c080dbca64d3a1ab36d.jpeg",
@@ -20,11 +20,11 @@
     "index.html": "/Lonely-Hormone-React/index.html",
     "static/media/cross.svg": "/Lonely-Hormone-React/static/media/cross.a6b9ffc5deeeb58064e76e9c4fe167d5.svg",
     "static/media/burger.svg": "/Lonely-Hormone-React/static/media/burger.fc12fbd678bea2ce4ec9524cbe12a170.svg",
-    "main.1be5a0a0.css.map": "/Lonely-Hormone-React/static/css/main.1be5a0a0.css.map",
-    "main.fa72d2cb.js.map": "/Lonely-Hormone-React/static/js/main.fa72d2cb.js.map"
+    "main.9f4699fe.css.map": "/Lonely-Hormone-React/static/css/main.9f4699fe.css.map",
+    "main.4881701a.js.map": "/Lonely-Hormone-React/static/js/main.4881701a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1be5a0a0.css",
-    "static/js/main.fa72d2cb.js"
+    "static/css/main.9f4699fe.css",
+    "static/js/main.4881701a.js"
   ]
 }
