@@ -1,6 +1,7 @@
 import './ContactPage.scss'
 
 // import components
+import Title from 'components/Title/Title'
 import Navbar from 'components/Navbar/Navbar'
 import SocialBox from 'components/SocialBox/SocialBox'
 import MapBox from 'components/MapBox/MapBox'
@@ -29,8 +30,11 @@ export default function ContactPage() {
   return (
     <div className="contactPageContainer">
       <Navbar />
+      <Title content={'社群媒體'} />
       <SocialBox />
+      <Title content={'我們的所在處'} />
       <MapBox />
+      <Title content={'最後，別忘了'} />
       <InfoBox img={groupImg} content={contactData.contactWords}/>
       <BackToTopBox />
       <Footer />
