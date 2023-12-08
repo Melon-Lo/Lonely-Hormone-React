@@ -12,7 +12,7 @@ import Footer from 'components/Footer/Footer'
 import contactData from 'data/contactData'
 
 // import img
-import bg from 'assets/bg without people.png'
+import happyTogetherImg from 'assets/timeline/happy together.png'
 
 // import hook
 import { useEffect, useContext } from 'react'
@@ -40,7 +40,7 @@ export default function ContactPage() {
       <Title content={midTitleContent} />
       <MapBox />
       <Title content={btnTitleContent} />
-      <InfoBox img={bg} content={contactData.contactWords}/>
+      <InfoBox img={happyTogetherImg} content={contactData.contactWords}/>
       <BackToTopBox />
       <Footer />
     </div>

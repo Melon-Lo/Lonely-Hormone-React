@@ -1,38 +1,45 @@
+// import img
+import indianImg from 'assets/timeline/indian.png'
+import goodWeatherImg from 'assets/timeline/good weather.png'
+import roseHeadImg from 'assets/timeline/rose head.png'
+import seaTurtleImg from 'assets/timeline/seaturtle.png'
+import creepyBabyImg from 'assets/timeline/creepy baby.png'
+
 const timelineData = [
   {
-    year: '2023',
-    date: 'Mar. 15th',
-    img: 'https://picsum.photos/536/353',
-    title: '新型量子電腦問世',
-    description: '由科學家團隊成功研發，首台商用量子電腦問世，將引領科技界進入嶄新時代。',
+    year: '2018',
+    date: 'Jan. 1st',
+    img: indianImg,
+    title: '寂寞荷爾蒙創立',
+    description: '一開始，只有爾蒙一人，以自導自演的方式，在大學期間上傳許多作品。',
   },
   {
-    year: '2023',
-    date: 'Jul. 22nd',
-    img: 'https://picsum.photos/536/354',
-    title: '全球再生能源目標達成',
-    description: '國際社會共同努力，實現全球再生能源使用達到30%，為地球環境保護奠定基礎。',
+    year: '2020',
+    date: 'Feb. 13th',
+    img: creepyBabyImg,
+    title: '擴大徵才',
+    description: '2020的生日，爾蒙許下了願望，於是「寂寞荷爾蒙」正式成為團隊，陸陸續續招募至如今五人。',
   },
   {
-    year: '2023',
-    date: 'Nov. 5th',
-    img: 'https://picsum.photos/536/356',
-    title: '人類登陸火星',
-    description: '國際太空探險隊伍成功登陸火星表面，成為人類歷史上的重大里程碑。',
+    year: '2020',
+    date: 'Mar. 10th',
+    img: roseHeadImg,
+    title: '精益求精',
+    description: '在增加成員之後，大家各自發揮所長，無論是導演、編劇、演出，在原本頻道的短劇類型上持續深耕。',
   },
   {
-    year: '2024',
-    date: 'Apr. 11th',
-    img: 'https://picsum.photos/536/358',
-    title: '基因編輯治療正式上市',
-    description: '新一代基因編輯治療技術上市，為許多遺傳性疾病帶來革命性的治療方式。',
+    year: '2021',
+    date: 'Apr. 21st',
+    img: seaTurtleImg,
+    title: '開疆闢土',
+    description: '除了原本的短劇之外，開始嘗試不同風格的影片，如成語、歌詞，甚至是海龜湯等等，發展不同的可能性。',
   },
   {
-    year: '2024',
+    year: '2022',
     date: 'Sep. 28th',
-    img: 'https://picsum.photos/536/359',
-    title: '世界各地普遍實行四天工作制',
-    description: '全球多國宣布實行每週四天工作制，旨在提升生活品質並減緩環境壓力。',
+    img: goodWeatherImg,
+    title: '蓄積能量',
+    description: '隨著成員們生活忙碌起來，大家漸漸聚少離多，影片產出速度銳減。但我們相信，每一次的深蹲，都是為了跳得更高。',
   },
 ]
 

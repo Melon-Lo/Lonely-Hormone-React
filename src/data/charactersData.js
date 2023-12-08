@@ -47,7 +47,7 @@ const charactersData = [
     avatar: chuanAvatar,
     head: chuanHead,
     line: greenLine,
-    slogan: '「創新、啟發、影響。」',
+    slogan: '「沒吃過豬，也要看過豬走路。」',
     introduction: '我總是喜歡嘗試新事物，無論是美食、音樂還是旅行。我認為生活太短暫，應該充滿歡笑和驚喜。',
   },
   {
@@ -57,7 +57,7 @@ const charactersData = [
     avatar: jellyAvatar,
     head: jellyHead,
     line: yellowLine,
-    slogan: '「敢於夢想，努力實現。」',
+    slogan: '「早起的蟲兒被鳥吃。」',
     introduction: '此外，我是一個堅定的夢想家，相信任何事情都有可能實現，只要我們保持積極態度和毅力。',
   },
   {
