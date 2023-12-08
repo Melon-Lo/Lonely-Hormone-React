@@ -1,4 +1,4 @@
-.footerContainer {
+.footerContainer, .smallFooterContainer {
   width: 100%;
   height: 150px;
   margin-top: 150px;
@@ -83,25 +83,13 @@
   }
 }
 
-// screen < 768px
+// screen <=  768px
 
 .smallFooterContainer {
-  width: 100%;
   height: 220px;
-  margin-top: 150px;
-  display: flex;
-
-  // background
-  background-image: url('../../assets/gray\ bg.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   .leftFooter {
     width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     .logo {
       width: 80%;
@@ -110,52 +98,22 @@
   }
 
   .rightFooter {
-    width: 60%;
-    margin: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
 
     .linkSection {
-      white-space: nowrap;
-
-      .linkTitle {
-        margin: 10px 0;
-        font-weight: 800;
-      }
 
       .links {
         display: flex;
         justify-content: space-evenly;
-
-        .link {
-          margin-right: 10px;
-          font-size: 0.8rem;
-          color: #3c3c3c;
-          cursor: pointer;
-        }
       }
     }
 
     .contactSection {
-      display: flex;
-      flex-direction: column;
-
-      .contactTitle {
-        margin: 10px 0;
-        font-weight: 800;
-      }
 
       .socialMediaCollection {
         display: flex;
         justify-content: space-evenly;
-
-        .socialMedia {
-          margin-right: 10px;
-          font-size: 0.8rem;
-          color: #3c3c3c;
-          cursor: pointer;
-        }
       }
     }
   }

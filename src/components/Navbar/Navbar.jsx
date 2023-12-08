@@ -90,7 +90,7 @@ export default function Navbar() {
           {pages}
         </div> :
 
-        // screen < 768px: sidebar
+        // screen <=  768px: sidebar
         <div 
           className="iconBox"
           onClick={() => {

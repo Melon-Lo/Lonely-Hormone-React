@@ -12,7 +12,7 @@ import { useState, useContext } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
 
 export default function SocialBox() {
-  const defaultContext = '點圖，與我們靠近。'
+  const defaultContext = '點圖，可以更接近我們'
   const [title, setTitle] = useState(defaultContext)
   const { windowWidth } = useContext(WindowWidthContext)
 

@@ -1,4 +1,4 @@
-.charactersContainer {
+.charactersContainer, .smallCharactersContainer {
   position: relative;
   margin: 20px 0;
   width: 100%;
@@ -20,11 +20,10 @@
     align-items: flex-end;
 
     &::before {
-      content: '點我，可以更認識我。';
+      content: '點我，可以更認識我';
       position: absolute;
       bottom: -50px;
-      color: white;
-      font-size: 1.2rem;
+      color: rgb(188, 188, 188);
     }
 
     .characterBox {
@@ -67,42 +66,21 @@
   }
 }
 
-// screen < 768px
+// screen <=  768px
 
 .smallCharactersContainer {
-  position: relative;
   margin-top: 20px;
   margin-bottom: 120px;
-  width: 100%;
-  height: 200px;
+  height: 120px;
 
   .background {
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
   }
   
   .characters {
-    position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-
-    &::before {
-      content: '點我，可以更認識我。';
-      position: absolute;
-      bottom: -50px;
-      color: white;
-      font-size: 1.2rem;
-    }
 
     .characterBox {
-      position: relative;
-      width: 20%;
-      height: 100%;
-      display: flex;
 
       .characterImg {
         position: absolute;

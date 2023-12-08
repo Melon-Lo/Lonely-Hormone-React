@@ -7,7 +7,7 @@
   justify-content: space-between;
 
   .iconTitle {
-    color: whitesmoke;
+    color: rgb(188, 188, 188);
     font-size: 1.2rem;
   }
 
@@ -47,14 +47,10 @@
   }
 }
 
-// screen < 768px
+// screen <=  768px
 
 .smallSocialBoxContainer {
   width: 80%;
-
-  .iconTitle {
-
-  }
 
   .iconBoxes {
 

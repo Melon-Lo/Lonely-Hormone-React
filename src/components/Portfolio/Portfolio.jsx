@@ -28,7 +28,7 @@ export default function Portfolio() {
           title="youtubeVideoPlayer">
         </iframe>
       </div>
-      <div className="text">
+      <div className="textContent">
         <div 
           className="title"
         >

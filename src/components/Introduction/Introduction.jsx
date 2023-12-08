@@ -49,7 +49,7 @@ export default function Introduction() {
                 <img src={character.head} alt={character.name + 'Avatar'} className='head'/>
               </div> :
 
-              ////////// screen < 768px
+              ////////// screen <= 768px
               <div className={'headBox' + clsx({'Left left': character.order % 2 !== 0, 'Right right fadeInRight': character.order % 2 === 0})}>
                 <img src={character.head} alt={character.name + 'Avatar'} className='head'/>
               </div>
@@ -85,7 +85,7 @@ export default function Introduction() {
                   </div>
                 </> :
 
-                ////////// screen < 768px
+                ////////// screen <=  768px
                 <>
                   <div className={"name" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>{character.name}</div>
                   <div className={"slogan" + clsx({Right: character.order % 2 !== 0, Left: character.order % 2 === 0})}>
