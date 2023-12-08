@@ -1,0 +1,30 @@
+.stepBoxContainer {
+  margin: 20px 0;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d0d0d0;
+  opacity: 0.8;
+  border-radius: 20px;
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    .icon {
+      width: 60%;
+      height: 60%;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        width: 80%;
+        height: 80%;
+        transition: 0.3s;
+      }
+    }
+  }
+}

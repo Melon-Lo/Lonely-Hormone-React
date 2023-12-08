@@ -6,7 +6,7 @@ import { nanoid } from 'nanoid'
 // import data
 import charactersData from 'data/charactersData'
 
-// import images
+// import img
 import background from 'assets/bg without people.png'
 
 // import hook
@@ -44,7 +44,7 @@ export default function Characters() {
       <img 
         id={character.eng + 'Img'}
         className="characterImg" 
-        src={windowWidth > 768 ? character.img : character.avatar} 
+        src={windowWidth > 768 ? character.avatar : character.head} 
         alt={character.name + 'Img'} 
       />
       <div 

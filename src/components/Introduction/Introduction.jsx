@@ -46,12 +46,12 @@ export default function Introduction() {
             { windowWidth > 768 ?
               ////////// screen > 768px
               <div className={'headBox ' + clsx({'left': character.order % 2 !== 0, 'right fadeInRight': character.order % 2 === 0})}>
-                <img src={character.avatar} alt={character.name + 'Avatar'} className='head'/>
+                <img src={character.head} alt={character.name + 'Avatar'} className='head'/>
               </div> :
 
               ////////// screen < 768px
               <div className={'headBox' + clsx({'Left left': character.order % 2 !== 0, 'Right right fadeInRight': character.order % 2 === 0})}>
-                <img src={character.avatar} alt={character.name + 'Avatar'} className='head'/>
+                <img src={character.head} alt={character.name + 'Avatar'} className='head'/>
               </div>
             } 
             

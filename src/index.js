@@ -5,6 +5,7 @@ import App from './App';
 
 // import context
 import PageContext from 'context/PageContext';
+import SectionContext from 'context/SectionContext';
 import WindowWidthProvider from 'context/WindowWidthContext';
 import EffectProvider from 'context/EffectContext';
 
@@ -14,7 +15,9 @@ root.render(
     <EffectProvider>
       <WindowWidthProvider>
         <PageContext>
-          <App />
+          <SectionContext>
+            <App />
+          </SectionContext>
         </PageContext>
       </WindowWidthProvider>
     </EffectProvider>

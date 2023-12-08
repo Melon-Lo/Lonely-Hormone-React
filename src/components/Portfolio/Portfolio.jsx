@@ -10,12 +10,17 @@ import portfolioData from 'data/portfolioData'
 // import hook
 import { useContext } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
+import { SectionContext } from 'context/SectionContext'
 
 export default function Portfolio() {
-  const { windowWidth } = useContext(WindowWidthContext)
   const navigate = useNavigate()
+  const { windowWidth } = useContext(WindowWidthContext)
+  const { sliceData } = useContext(SectionContext)
 
-  const works = portfolioData.map(workItem => (
+  // show 3 items per section
+  const currentPortfolio = sliceData(portfolioData, 3)
+
+  const works = currentPortfolio.map(workItem => (
     <div key={nanoid()} className="workItem">
       <div className="videoBox">
         <iframe 
