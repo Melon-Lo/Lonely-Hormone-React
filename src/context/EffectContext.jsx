@@ -25,8 +25,8 @@ export default function EffectProvider({ children }) {
 
   // when the avatar is/isn't hovered, zoom in/out the character
   function zoomIn(characterName) {
-    let name = document.getElementById(characterName).id
-    let imgBox = document.getElementById(name + 'Img')
+    const name = document.getElementById(characterName).id
+    const imgBox = document.getElementById(name + 'Img')
     if(imgBox) {
       imgBox.style = `
         opacity: 1;
@@ -38,8 +38,8 @@ export default function EffectProvider({ children }) {
   }
 
   function zoomOut(characterName) {
-    let name = document.getElementById(characterName).id
-    let imgBox = document.getElementById(name + 'Img')
+    const name = document.getElementById(characterName).id
+    const imgBox = document.getElementById(name + 'Img')
     if(imgBox) {
       imgBox.style = `
         opacity: 0.8;
@@ -50,16 +50,16 @@ export default function EffectProvider({ children }) {
 
   // when the avatar is/isn't hovered, show/hide the character's name
   function showName(characterName) {
-    let name = document.getElementById(characterName).id
-    let nameBox = document.getElementById(name + 'Name')
+    const name = document.getElementById(characterName).id
+    const nameBox = document.getElementById(name + 'Name')
     if(nameBox) {
       nameBox.style = 'opacity: 1';
     }
   }
 
   function hideName(characterName) {
-    let name = document.getElementById(characterName).id
-    let nameBox = document.getElementById(name + 'Name')
+    const name = document.getElementById(characterName).id
+    const nameBox = document.getElementById(name + 'Name')
     if(nameBox) {
       nameBox.style = 'opacity: 0';
     }

@@ -2,7 +2,7 @@ import './SocialBox.scss'
 
 // import dependencies
 import { nanoid } from 'nanoid'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // import data
 import socialMediaData from 'data/socialMediaData'
@@ -12,25 +12,28 @@ import { useState, useContext } from 'react'
 import { WindowWidthContext } from 'context/WindowWidthContext'
 
 export default function SocialBox() {
-  const defaultContext = '點選圖示，與我們聯繫。'
+  const defaultContext = '點圖，與我們靠近。'
   const [title, setTitle] = useState(defaultContext)
   const { windowWidth } = useContext(WindowWidthContext)
-  const navigate = useNavigate()
 
   const socialMediaCollection = socialMediaData.map(media => (
-    <div 
+    <Link
       key={nanoid()}
-      className="iconBox"
-      onMouseEnter={() => setTitle(media.title)}
-      onMouseLeave={() => setTitle(defaultContext)}
+      to={media.href}
     >
-      <img 
-        src={media.icon} 
-        className="icon" 
-        alt="icon" 
-        onClick={() => navigate(media.href)}
-      />
-    </div>
+      <div 
+        key={nanoid()}
+        className="iconBox"
+        onMouseEnter={() => setTitle(media.title)}
+        onMouseLeave={() => setTitle(defaultContext)}
+      >
+        <img 
+          src={media.icon} 
+          className="icon" 
+          alt="icon" 
+        />
+      </div>
+    </Link>
   ))
 
   return (

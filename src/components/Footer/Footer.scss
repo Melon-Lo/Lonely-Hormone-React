@@ -18,7 +18,7 @@
 
     .logo {
       width: 40%; 
-      max-width: 200px;     
+      max-width: 140px;     
     }
   }
 
@@ -46,6 +46,10 @@
           font-size: 0.8rem;
           color: #3c3c3c;
           cursor: pointer;
+
+          &:hover {
+            color: rgb(152, 0, 0);
+          }
         }
       }
     }
@@ -69,6 +73,10 @@
           font-size: 0.8rem;
           color: #3c3c3c;
           cursor: pointer;
+
+          &:hover {
+            color: rgb(152, 0, 0);
+          }
         }
       }
     }

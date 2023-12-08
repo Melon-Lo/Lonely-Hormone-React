@@ -12,14 +12,17 @@ import Footer from 'components/Footer/Footer'
 import { useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
 import { EffectContext } from 'context/EffectContext'
+import { SectionContext } from 'context/SectionContext'
 
 export default function PortfolioPage() {
   const { setCurrentPage } = useContext(PageContext)
   const { scrollToTop } = useContext(EffectContext)
+  const { setCurrentSection } = useContext(SectionContext)
   const titleContent = 'Youtube 作品集'
 
   useEffect(() => {
     setCurrentPage('/portfolio')
+    setCurrentSection(1)
     scrollToTop()
   }, [])
 

@@ -12,7 +12,7 @@ import Footer from 'components/Footer/Footer'
 import contactData from 'data/contactData'
 
 // import img
-import groupImg from 'assets/group.jpeg'
+import bg from 'assets/bg without people.png'
 
 // import hook
 import { useEffect, useContext } from 'react'
@@ -24,7 +24,7 @@ export default function ContactPage() {
   const { setCurrentPage } = useContext(PageContext)
   const { scrollToTop } = useContext(EffectContext)
   const topTitleContent = '社群媒體'
-  const midTitleContent = '我們的所在處'
+  const midTitleContent = '大本營'
   const btnTitleContent = '最後，別忘了'
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function ContactPage() {
       <Title content={midTitleContent} />
       <MapBox />
       <Title content={btnTitleContent} />
-      <InfoBox img={groupImg} content={contactData.contactWords}/>
+      <InfoBox img={bg} content={contactData.contactWords}/>
       <BackToTopBox />
       <Footer />
     </div>

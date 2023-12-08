@@ -2,7 +2,7 @@ import './Portfolio.scss'
 
 // import dependencies
 import { nanoid } from 'nanoid'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // import data
 import portfolioData from 'data/portfolioData'
@@ -13,7 +13,6 @@ import { WindowWidthContext } from 'context/WindowWidthContext'
 import { SectionContext } from 'context/SectionContext'
 
 export default function Portfolio() {
-  const navigate = useNavigate()
   const { windowWidth } = useContext(WindowWidthContext)
   const { sliceData } = useContext(SectionContext)
 
@@ -25,16 +24,20 @@ export default function Portfolio() {
       <div className="videoBox">
         <iframe 
           className="video" 
-          src={workItem.src} 
+          src={workItem.embed} 
           title="youtubeVideoPlayer">
         </iframe>
       </div>
       <div className="text">
         <div 
           className="title"
-          onClick={() => navigate(workItem.src)}
         >
-          {workItem.title}
+          <Link
+            key={nanoid()}
+            to={workItem.src}
+          >
+            {workItem.title}
+          </Link>
         </div>
         <div className="description">{workItem.description}</div>
       </div>

@@ -9,7 +9,6 @@
   .iconTitle {
     color: whitesmoke;
     font-size: 1.2rem;
-    transition: 1s;
   }
 
   .iconBoxes {
@@ -26,6 +25,15 @@
       border-radius: 50%;
       cursor: pointer;
       animation: iconAnimation 2s infinite;
+
+      // shadow
+      box-shadow: 0 0 5px 5px rgb(255, 255, 255);
+
+      &:hover {
+        outline: 3px solid rgb(152, 0, 0);
+        transition: 0.3s;
+        animation: iconAnimation 2s infinite;
+      }
   
       .icon {
         position: absolute;
@@ -34,10 +42,6 @@
         transform: translate(-50%, -50%);
         width: 40px;
         height: 40px;
-      }
-  
-      &:hover {
-        outline: 5px solid red;
       }
     }
   }
