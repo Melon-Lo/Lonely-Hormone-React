@@ -13,7 +13,7 @@ export default function InfoBox({content, img}) {
         className="img" 
         src={img} 
         alt="img" />
-      <div className="text">
+      <div className="infoText">
         {content}
       </div>
     </div>

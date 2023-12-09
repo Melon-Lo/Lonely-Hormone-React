@@ -53,13 +53,12 @@
 
       .description {
         padding: 5px 15px;
-        
       }
     }
   }
 
   &::before {
-    content: '點按標題可以觀賞影片';
+    content: '點按標題可以前往 YouTube 觀賞影片';
     color: rgb(188, 188, 188);
     animation: fadeIn 2s;
   }

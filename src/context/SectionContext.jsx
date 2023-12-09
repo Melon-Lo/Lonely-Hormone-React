@@ -6,6 +6,7 @@ export default function StepProvider({ children }) {
   const [currentSection, setCurrentSection] = useState(1)
   const [totalSections, setTotalSections] = useState(0)
 
+  // slice data every certain items
   function sliceData(data, itemsPerSection) {
     // start from index[0]
     const startIndex = (currentSection - 1) * itemsPerSection
@@ -14,6 +15,7 @@ export default function StepProvider({ children }) {
     return data.slice(startIndex, endIndex)
   }
 
+  // to next/previous section
   function toNextSection() {
     if(currentSection >= totalSections) return
     setCurrentSection(prevSection => prevSection + 1)

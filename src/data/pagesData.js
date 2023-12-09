@@ -12,7 +12,7 @@ const pagesData = [
     href: '/portfolio',
   },
   {
-    title: '聯絡我們',
+    title: '聯絡資訊',
     href: '/contact',
   },
 ]

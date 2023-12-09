@@ -1,7 +1,7 @@
 import './MapBox.scss'
 
 // import data
-import contactData from 'data/contactData'
+import textData from 'data/textData'
 
 export default function MapBox() {
   const address = '100台北市藍藍路二段13-7號'
@@ -11,7 +11,7 @@ export default function MapBox() {
       <div className="address">{address}</div>
       <iframe 
         className="map" 
-        src={contactData.googleMapSrc} 
+        src={textData.googleMapSrc} 
         title="Google Map" 
         loading="lazy">
       </iframe>

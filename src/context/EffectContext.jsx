@@ -65,7 +65,7 @@ export default function EffectProvider({ children }) {
     }
   }
 
-  // when scrollingt to certain elements, show animation based on classNames
+  // when scrolling to certain elements, show animation based on classNames
   function addRemoveAnimationClassName(className, animationClassName, anchor) {
     const animatedElements = document.getElementsByClassName(className)
 

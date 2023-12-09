@@ -17,7 +17,7 @@ export default function StepBox() {
     <div className="stepBoxContainer">
       <div className="box iconBox">
         { currentSection !== 1 &&
-            <img 
+          <img 
             className="icon" 
             src={leftArrow} 
             alt="leftArrow" 

@@ -28,47 +28,20 @@
     display: flex;
     justify-content: space-around;
 
-    .linkSection {
+    .section {
       white-space: nowrap;
 
-      .linkTitle {
+      .sectionTitle {
         margin: 10px 0;
         font-weight: 800;
       }
 
-      .links {
+      .linkCollection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
 
         .link {
-          margin-right: 10px;
-          font-size: 0.8rem;
-          color: #3c3c3c;
-          cursor: pointer;
-
-          &:hover {
-            color: rgb(152, 0, 0);
-          }
-        }
-      }
-    }
-
-    .contactSection {
-      display: flex;
-      flex-direction: column;
-    
-      .contactTitle {
-        margin: 10px 0;
-        font-weight: 800;
-      }
-
-      .socialMediaCollection {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
-        .socialMedia {
           margin-right: 10px;
           font-size: 0.8rem;
           color: #3c3c3c;
@@ -101,17 +74,9 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .linkSection {
+    .section {
 
-      .links {
-        display: flex;
-        justify-content: space-evenly;
-      }
-    }
-
-    .contactSection {
-
-      .socialMediaCollection {
+      .linkCollection {
         display: flex;
         justify-content: space-evenly;
       }

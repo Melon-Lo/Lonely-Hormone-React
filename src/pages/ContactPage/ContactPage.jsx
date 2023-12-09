@@ -9,7 +9,7 @@ import InfoBox from 'components/InfoBox/InfoBox'
 import Footer from 'components/Footer/Footer'
 
 // import data
-import contactData from 'data/contactData'
+import textData from 'data/textData'
 
 // import img
 import happyTogetherImg from 'assets/timeline/happy together.png'
@@ -40,7 +40,7 @@ export default function ContactPage() {
       <Title content={midTitleContent} />
       <MapBox />
       <Title content={btnTitleContent} />
-      <InfoBox img={happyTogetherImg} content={contactData.contactWords}/>
+      <InfoBox img={happyTogetherImg} content={textData.contactWords}/>
       <BackToTopBox />
       <Footer />
     </div>
