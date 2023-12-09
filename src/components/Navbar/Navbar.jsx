@@ -85,7 +85,7 @@ export default function Navbar() {
       </div>
 
       { windowWidth > 768 ? 
-        // big screen
+        // screen > 768px
         <div className="pagesBox">
           {pages}
         </div> :

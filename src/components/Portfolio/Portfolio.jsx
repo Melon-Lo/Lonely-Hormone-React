@@ -19,6 +19,7 @@ export default function Portfolio() {
   // show 3 items per section
   const currentPortfolio = sliceData(portfolioData, 3)
 
+  // render work items
   const works = currentPortfolio.map(workItem => (
     <div key={nanoid()} className="workItem">
       <div className="videoBox">

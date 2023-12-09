@@ -22,6 +22,7 @@ export default function Introduction() {
   const sloganSpeed = 100
   const introSpeed = 30
 
+  // add animation
   useEffect(() => {
     addRemoveAnimationClassName('headBox left', 'fadeInLeft')
     addRemoveAnimationClassName('headBox right', 'fadeInRight')

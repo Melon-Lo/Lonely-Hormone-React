@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import logo from 'assets/logo_TC+EN.png'
 
 // import data
-import linksData from 'data/linksData'
+import pagesData from 'data/pagesData'
 import socialMediaData from 'data/socialMediaData'
 
 // import hook
@@ -17,38 +17,37 @@ import { WindowWidthContext } from 'context/WindowWidthContext'
 
 export default function Footer() {
   const { windowWidth } = useContext(WindowWidthContext)
+  const pageTitle = '頁面快轉'
   const contactTitle = '社群媒體'
 
+  // render pageSection
   const linkSection = (
-    <div className="linkSection">
-      {linksData.map(linkItem => (
-        <div key={nanoid()}>
-          <div className="linkTitle">{linkItem.title}</div>
-          <div className="links">
-            {linkItem.links.map(link => (
-              <Link 
-                key={nanoid()} 
-                to={link.href} 
-                className="link"
-              >
-                {link.title}
-              </Link>
-            ))}
-          </div>
-        </div>
-      ))}
+    <div className="section">
+      <div className="sectionTitle">{pageTitle}</div>
+      <div className="linkCollection">
+        {pagesData.map(page => (
+          <Link 
+            key={nanoid()} 
+            to={page.href} 
+            className="link"
+          >
+            {page.title}
+          </Link>
+        ))}
+      </div>
     </div>
   )
 
+  // render contactSection
   const contactSection = (
-    <div className="contactSection">
-      <div className="contactTitle">{contactTitle}</div>
-      <div className="socialMediaCollection">
+    <div className="section">
+      <div className="sectionTitle">{contactTitle}</div>
+      <div className="linkCollection">
         {socialMediaData.map(socialMedia => 
           <Link
             key={nanoid()}
             to={socialMedia.href}
-            className="socialMedia"
+            className="link"
           >
             {socialMedia.title}
           </Link>

@@ -19,6 +19,7 @@ export default function Timeline() {
   const { addRemoveAnimationClassName } = useContext(EffectContext)
   const textContent = '故事還在繼續⋯⋯'
 
+  // add animation
   useEffect(() => {
     addRemoveAnimationClassName("circle", "circleAnimation")
     addRemoveAnimationClassName("dateBox", "textAnimation")
@@ -27,6 +28,7 @@ export default function Timeline() {
     addRemoveAnimationClassName("bottomText", "infoImgAnimation")
   }, [])
 
+  // render timeline
   const timeline = timelineData.map(timelineEvent => (
     <div key={nanoid()} className="timelineBox">
       <div className="leftInfo">

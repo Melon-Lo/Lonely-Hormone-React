@@ -16,6 +16,7 @@ export default function SocialBox() {
   const [title, setTitle] = useState(defaultContext)
   const { windowWidth } = useContext(WindowWidthContext)
 
+  // render social media collection
   const socialMediaCollection = socialMediaData.map(media => (
     <Link
       key={nanoid()}

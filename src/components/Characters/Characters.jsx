@@ -22,6 +22,7 @@ export default function Characters() {
   const { scrollToAnchor, zoomIn, zoomOut, showName, hideName } = useContext(EffectContext)
   const { windowWidth } = useContext(WindowWidthContext)
 
+  // render characters
   const characters = newOrder.map(character => (
     <div 
       key={nanoid()}
