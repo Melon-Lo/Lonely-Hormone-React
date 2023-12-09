@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Lonely-Hormone-React/static/css/main.d2748c8b.css",
-    "main.js": "/Lonely-Hormone-React/static/js/main.86ad7b4b.js",
+    "main.css": "/Lonely-Hormone-React/static/css/main.d5d3ad93.css",
+    "main.js": "/Lonely-Hormone-React/static/js/main.48579722.js",
     "static/media/good weather.png": "/Lonely-Hormone-React/static/media/good weather.ea15ada6c9cd4df75bc8.png",
     "static/media/iris.png": "/Lonely-Hormone-React/static/media/iris.9da2449f49ed23e80fcc.png",
     "static/media/seaturtle.png": "/Lonely-Hormone-React/static/media/seaturtle.ffedf7baca6720308929.png",
@@ -42,11 +42,11 @@
     "static/media/left-arrow.svg": "/Lonely-Hormone-React/static/media/left-arrow.53f98e44bdfcd6a8dfbec91673bc4096.svg",
     "static/media/cross.svg": "/Lonely-Hormone-React/static/media/cross.a6b9ffc5deeeb58064e76e9c4fe167d5.svg",
     "static/media/burger.svg": "/Lonely-Hormone-React/static/media/burger.fc12fbd678bea2ce4ec9524cbe12a170.svg",
-    "main.d2748c8b.css.map": "/Lonely-Hormone-React/static/css/main.d2748c8b.css.map",
-    "main.86ad7b4b.js.map": "/Lonely-Hormone-React/static/js/main.86ad7b4b.js.map"
+    "main.d5d3ad93.css.map": "/Lonely-Hormone-React/static/css/main.d5d3ad93.css.map",
+    "main.48579722.js.map": "/Lonely-Hormone-React/static/js/main.48579722.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2748c8b.css",
-    "static/js/main.86ad7b4b.js"
+    "static/css/main.d5d3ad93.css",
+    "static/js/main.48579722.js"
   ]
 }
