@@ -20,7 +20,7 @@
 
 #### 手機版
 
-![image](/src/assets/readme/mobile_main.png)
+![image](/src/assets/readme/mobile_main.PNG)
 
 ### 關於我們
 
@@ -32,7 +32,7 @@
 
 #### 手機版
 
-![image](/src/assets/readme/mobile_about.png)
+![image](/src/assets/readme/mobile_about.PNG)
 
 ### 作品集
 
@@ -44,7 +44,7 @@
 
 #### 手機版
 
-![image](/src/assets/readme/mobile_portfolio.png)
+![image](/src/assets/readme/mobile_portfolio.PNG)
 
 ### 聯絡資訊
 
@@ -56,7 +56,7 @@
 
 #### 手機版
 
-![image](/src/assets/readme/mobile_contact.png)
+![image](/src/assets/readme/mobile_contact.PNG)
 
 ### 其他重要資訊
 
@@ -109,7 +109,7 @@ Click on the upper characters to navigate to their individual introductions. On 
 
 #### Mobile Version
 
-![image](/src/assets/readme/mobile_main.png)
+![image](/src/assets/readme/mobile_main.PNG)
 
 ### About Us
 
@@ -121,7 +121,7 @@ A chronological presentation that introduces the group's history and evolution.
 
 #### Mobile Version
 
-![image](/src/assets/readme/mobile_about.png)
+![image](/src/assets/readme/mobile_about.PNG)
 
 ### Portfolio
 
@@ -133,7 +133,7 @@ Showcases the group's YouTube video works, covering a wide range of content.
 
 #### Mobile Version
 
-![image](/src/assets/readme/mobile_portfolio.png)
+![image](/src/assets/readme/mobile_portfolio.PNG)
 
 ### Contact Information
 
@@ -145,7 +145,7 @@ On this page, you'll find all the ways to get in touch with us.
 
 #### Mobile Version
 
-![image](/src/assets/readme/mobile_contact.png)
+![image](/src/assets/readme/mobile_contact.PNG)
 
 ### Additional Information
 
